@@ -51,7 +51,8 @@ Eri värianalyysijärjestelmät voivat käyttää samoja nimityksiä eri tavoin.
 
 - Manuaalinen värianalyysi ja käyttäjän oma profiili.
 - Väriperheiden ja alatyyppien esittely.
-- Henkilökohtainen väripaletti.
+- Henkilökohtainen väripaletti, jossa on aiempaa laajempi valikoima sävyjä.
+- Profiilin värisuunnan, syvyyden ja kontrastin mukaan mukautuvat meikki-, huulipuna-, hiusväri-, hiustyyli-, kynsilakka- ja asustevinkit.
 - Vaatteiden väri- ja yhdistelyvinkit.
 - Meikki- ja huulivärivinkit.
 - Hiusten värjäyksen inspiraatio.
@@ -158,7 +159,8 @@ Different colour analysis systems may use the same labels in different ways. Def
 
 - Manual colour analysis and a user profile.
 - Colour family and subtype guides.
-- Personal colour palettes.
+- Personal colour palettes with a broader range of shades.
+- Makeup, lip colour, hair colour, hairstyle, nail colour and accessory ideas adapted to the selected colour direction, depth and contrast.
 - Clothing colour and combination suggestions.
 - Makeup and lip colour suggestions.
 - Hair colour inspiration.
