@@ -29,6 +29,7 @@ const translations = {
     contrastSoft: "Korostusvärit ovat pehmeitä ja hillittyjä.", contrastMedium: "Korostusväreissä on maltillista erottuvuutta.", contrastHigh: "Korostusvärit ovat selkeämpiä ja voimakkaampia.",
     eyeAccent: "Silmien väristä valittu korostussävy", hairAccent: "Hiusten väristä valittu korostussävy",
     helpTitle: "Miten vastaan tähän?", helpSkin: "Tarkastele kasvojen ihoa päivänvalossa ilman voimakasta meikkiä. Pohjasävy tarkoittaa ihon yleistä lämpö- tai viileysvaikutelmaa, ei ihon vaaleutta tai tummuutta. Jos et osaa arvioida, valitse En ole varma.", helpVeins: "Katso ranteen sisäpuolen verisuonia luonnonvalossa. Sinertävät tai violetit suonet voivat viitata viileään vaikutelmaan, vihertävät lämpimään ja molempia sisältävä neutraaliin. Tämä on vain karkea vihje: ihon sävy, valaistus ja suonten näkyvyys vaikuttavat havaintoon. Älä päättele pohjasävyä pelkästään tästä.", helpDepth: "Arvioi ihon vaaleutta tai syvyyttä, älä pohjasävyä. Vertaa kasvojen ja kaulan luonnollista sävyä päivänvalossa. Valitse Vaihtelee, jos kasvojen, kaulan ja vartalon sävyt poikkeavat selvästi.", helpEyes: "Valitse silmien hallitseva sävy luonnonvalossa. Jos iiriksessä on useita värejä, valitse lähin sekoittunut vaihtoehto tai Muu / monivärinen. Jos silmät ovat keskenään eri väriset, valitse se vaihtoehto.", helpHair: "Valitse hiusten nykyinen näkyvä väri. Jos haluat arvioida luonnollista värimaailmaasi, valitse luonnollinen hiusväri; jos haluat vinkkejä nykyiseen tyyliin, valitse nykyinen värjätty sävy. Monivärisille hiuksille sopii Värjätty / monivärinen.", helpSun: "Mieti aiempia kokemuksiasi tavallisessa auringossa ilman tarkoituksellista rusketusta. Palaatko ensin, rusketutko vähitellen vai rusketutko helposti? Älä altista ihoa auringolle testataksesi tätä. Aiemmat kokemukset riittävät. UV-säteily voi vaurioittaa ihoa kaikilla ihotyypeillä.", helpFreckles: "Arvioi, ilmestyykö ihollesi pisamia helposti esimerkiksi kesällä tai auringossa. Huomioi myös luonnostaan ympäri vuoden näkyvät pisamat. Pisamien määrä ja näkyvyys vaihtelevat.", helpMetal: "Valitse metalli, jonka sävy näyttää omasta mielestäsi harmonisimmalta ihollasi. Voit verrata kulta- ja hopeakorua kasvojen lähellä luonnonvalossa. Tämä on makuasia, eikä yksi metalli ole oikea kaikille. Valitse Sekalaiset / kaikki käy, jos pidät useista metalleista.", helpJewellery: "Valitse korutyyppi, jota käytät arjessa eniten. Jos vaihtelet koruja tai käytät monenlaisia, valitse Sekalaisesti / kaikenlaisia. Tämä auttaa kohdentamaan myöhemmät tyyli- ja asustevinkit.", helpContrast: "Vertaa hiusten, ihon ja silmien välistä eroa. Matala kontrasti näyttää pehmeältä ja sävyt ovat lähellä toisiaan; korkea kontrasti erottuu selvästi. Keskitaso on näiden väliltä. Arvioi päivänvalossa ilman filttereitä.",
+    sunResult: { burns: "Aurinkoreaktiosi perusteella suojaa iho huolellisesti; tämä havainto ei yksin määritä pohjasävyä.", burnsThenTans: "Ihosi voi palaa ennen ruskettumista; tämä on erillinen ominaisuus pohjasävystä.", gradualTan: "Kuvaamasi asteittainen ruskettuminen on yksi ihon ominaisuus, ei yksinään pohjasävyn mittari.", tansEasily: "Helppo ruskettuminen ei yksin kerro ihon pohjasävyä." }, frecklesResult: { often: "Pisamat ovat yksi ihon näkyvä ominaisuus, eivät yksin pohjasävyn määrittäjä.", sometimes: "Pisamien ilmaantuminen voi vaihdella vuodenajan ja auringon mukaan.", rarely: "Pisamien vähäisyys tai puuttuminen ei määritä pohjasävyä." }, metalResult: { gold: "Valitsit korumetalliksi kullan; kokeile lämpimiä kultasävyjä asusteissa.", silver: "Valitsit korumetalliksi hopean; kokeile viileitä hopeasävyjä asusteissa.", roseGold: "Valitsit ruusukullan; kokeile pehmeitä punertavia metallisävyjä.", mixed: "Pidät useista metallisävyistä — yhdistele rohkeasti kultaa, hopeaa ja ruusukultaa." },
     resultWarmText: "Kokeile esimerkiksi terrakottaa, lämmintä ruskeaa, oliivinvihreää ja pehmeää kultaa.",
     resultCoolText: "Kokeile esimerkiksi luumua, marjaisia sävyjä, savunsinistä ja viileitä vihreitä.",
     resultNeutralText: "Vertaile lämpimiä ja viileitä sävyjä rinnakkain, esimerkiksi taupea, ruusua, metsänvihreää ja savunsinistä.",
@@ -63,6 +64,7 @@ const translations = {
     contrastSoft: "Accent colours are soft and muted.", contrastMedium: "Accent colours have moderate definition.", contrastHigh: "Accent colours are clearer and more vivid.",
     eyeAccent: "Accent shade selected from your eye-colour choice", hairAccent: "Accent shade selected from your hair-colour choice",
     helpTitle: "How should I answer?", helpSkin: "Look at your skin in natural daylight without strong makeup. Undertone describes the overall warm or cool impression, not how light or deep your skin is. Choose Not sure if you cannot confidently tell.", helpVeins: "Look at the veins on the inside of your wrist in natural daylight. Blue or purple veins may suggest a cool impression, green veins a warm one, and a mix may suggest neutral. This is only a rough clue: skin tone, lighting and vein visibility affect what you see. Do not determine undertone from veins alone.", helpDepth: "Estimate how light or deep your skin appears, separately from undertone. Compare your face and neck in daylight. Choose Varies if the tones of your face, neck and body differ noticeably.", helpEyes: "Choose the dominant iris colour in natural light. If your iris contains several colours, choose the closest mixed option or Other / multicoloured. If your eyes are different colours, select that option.", helpHair: "Choose the hair colour currently visible. For your natural colour harmony, select your natural hair colour; for suggestions matching your current look, choose the colour you wear now. Choose Dyed / multicoloured for several colours.", helpSun: "Think about your usual past experience in the sun without deliberately trying to tan. Do you burn first, tan gradually, or tan easily? Never expose your skin to sunlight as a test. Your past experience is enough. UV radiation can damage every skin type.", helpFreckles: "Consider whether freckles appear easily, for example in summer or after sun exposure. You can also include freckles that are visible all year round. Freckles vary in number and visibility.", helpMetal: "Choose the metal colour that looks most harmonious to you against your skin. You can compare gold and silver jewellery near your face in natural daylight. This is personal preference, not a fixed rule. Choose Mixed metals / anything goes if you enjoy several metals.", helpJewellery: "Choose the type of jewellery you wear most often. If you switch between types or wear a variety, choose A mix / all kinds. This helps tailor future style and accessory suggestions.", helpContrast: "Compare the difference between your hair, skin and eyes. Low contrast looks soft, with features close in depth; high contrast is clearly defined. Medium is between these. Assess in natural light without filters.",
+    sunResult: { burns: "Your skin burns easily; protect it carefully. This does not determine your undertone.", burnsThenTans: "Your skin may burn before tanning; this is separate from undertone.", gradualTan: "Gradual tanning is one skin characteristic, not an undertone test.", tansEasily: "Tanning easily does not determine your undertone." }, frecklesResult: { often: "Freckles are a visible skin characteristic, not an undertone test.", sometimes: "Freckles may vary with season and sun exposure.", rarely: "Having few or no freckles does not determine your undertone." }, metalResult: { gold: "You selected gold; try warm gold tones in accessories.", silver: "You selected silver; try cool silver tones in accessories.", roseGold: "You selected rose gold; try soft rosy metal tones.", mixed: "You enjoy several metal tones — feel free to combine gold, silver and rose gold." },
     resultWarmText: "Try terracotta, warm brown, olive green and soft gold.",
     resultCoolText: "Try plum, berry shades, smoky blue and cool greens.",
     resultNeutralText: "Compare warm and cool shades side by side, such as taupe, rose, forest green and smoky blue.",
@@ -117,6 +119,8 @@ const eyeAccents = {
   lightblue: "#A9C7DA", blue: "#718FA5", grey: "#9AA6B2", green: "#71845B", greyGreen: "#89977C", hazel: "#A18A55", amber: "#C18A3C", lightBrown: "#A77B54", brown: "#76513F", darkBrown: "#49362F", heterochromia: "#8A7899", other: "#8A7899"
 };
 
+const metalAccents = { gold: "#C6A36A", silver: "#BFC5CC", roseGold: "#C58F83", mixed: "#A88D78", unsure: "#A78A91" };
+
 const hairAccents = {
   platinum: "#DDE0DF", ashBlonde: "#B9B3A7", goldBlonde: "#D6B77A", darkBlonde: "#A98B61", strawberry: "#C58B72", copper: "#B86F55", red: "#B86F55", auburn: "#824C3D", lightBrown: "#A77B54", mediumBrown: "#76513F", darkBrown: "#49362F", brown: "#76513F", black: "#38343A", grey: "#AEB4B8", white: "#F0EEE8", dyed: "#9273A6", unsure: "#A78A91"
 };
@@ -136,7 +140,8 @@ function createPalette(profile) {
     ...depthAccents[depth],
     ...contrastAccents[contrast],
     eyeAccents[profile.eyes] || eyeAccents.other,
-    hairAccents[profile.hair] || hairAccents.unsure
+    hairAccents[profile.hair] || hairAccents.unsure,
+    metalAccents[profile.metal] || metalAccents.unsure
   ];
 
   // Keep the palette compact and remove duplicate hex values.
@@ -144,7 +149,7 @@ function createPalette(profile) {
     temperature,
     depth,
     contrast,
-    colours: [...new Set(colours)].slice(0, 10)
+    colours: [...new Set(colours)].slice(0, 11)
   };
 }
 
@@ -252,8 +257,11 @@ document.getElementById("colour-form").addEventListener("submit", (event) => {
       : result.temperature === "cool" ? "resultCoolText"
       : result.temperature === "neutral" ? "resultNeutralText" : "resultFlexibleText"],
     copy[depthKey],
-    copy[contrastKey]
-  ].join(" ");
+    copy[contrastKey],
+    profile.sun && profile.sun !== "unsure" ? copy.sunResult[profile.sun] : "",
+    profile.freckles && profile.freckles !== "unsure" ? copy.frecklesResult[profile.freckles] : "",
+    profile.metal && profile.metal !== "unsure" ? copy.metalResult[profile.metal] : ""
+  ].filter(Boolean).join(" ");
 
   renderPalette(result.colours);
 
