@@ -6,3 +6,11 @@
 .info-button:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
 .info-panel{flex-basis:100%;margin:.25rem 0 0;padding:.85rem 1rem;border-left:3px solid var(--copper);background:var(--canvas);color:var(--muted);font-size:.9rem;border-radius:0 6px 6px 0}
 .info-panel[hidden]{display:none}
+
+
+/* Personalised beauty and styling recommendation cards. */
+.style-recommendations{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin:1.5rem 0}
+.recommendation-card{padding:1.25rem;background:var(--canvas);border:1px solid var(--line);border-radius:8px}
+.recommendation-card h4{font-size:1.2rem;margin:0 0 .65rem;color:var(--ink)}
+.recommendation-card p{margin:.55rem 0;color:var(--muted);line-height:1.65}
+@media(max-width:650px){.style-recommendations{grid-template-columns:1fr}}
