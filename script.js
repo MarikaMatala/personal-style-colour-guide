@@ -13,6 +13,36 @@ const translations = {
     principle3Title: "Vapaus kokeilla", principle3Text: "Värit ovat inspiraatiota. Käytä niitä, joista itse pidät ja joissa viihdyt.",
     guideEyebrow: "Interaktiivinen demo", guideTitle: "Rakenna oma väriprofiilisi.",
     guideText: "Valitse lähimmät vaihtoehdot. Voit ohittaa kohdan, jos et ole varma. Jokainen valinta vaikuttaa paletin sävyihin tai korostusväreihin.",
+    makeupHeading: "Meikkivinkit", hairColourHeading: "Hiusvärit ja sävyt", hairstyleHeading: "Hiustyyli-ideat", extrasHeading: "Asusteet, kynnet ja yhdistely",
+    beautyAdvice: {
+      warm: {
+        makeup: "Kokeile persikkaista, aprikoosista tai lämmintä ruusuista poskipunaa. Huulille sopivat koralli, lämmin nude, tiilenpunainen ja tomaattinen punainen. Silmämeikissä voit testata pronssia, kuparia, oliivia ja lämmintä ruskeaa.",
+        hair: "Lämpimään vaikutelmaan sopivia kokeiltavia sävyjä ovat hunajablondi, karamelli, kultainen ruskea, kupari ja lämmin kastanja. Hienovaraiset lämpimät raidat voivat tuoda moniulotteisuutta.",
+        style: "Kokeile pehmeitä kerrostuksia, kasvoja kehystäviä suortuvia, laineita, lettejä tai rentoa nutturaa. Kiiltävä viimeistely ja lämpimät hiusasusteet voivat täydentää kokonaisuutta. Valitse leikkaus hiusten rakenteen, pituuden ja oman mieltymyksen mukaan.",
+        extras: "Yhdistele lämpimiä metallisävyjä, kuten kultaa, pronssia, kuparia ja messinkiä. Kynsissä voit kokeilla terrakottaa, korallia, karamellia, oliivia tai lämmintä punaista. Toista yhtä paletin sävyä esimerkiksi huivissa, laukussa tai koruissa."
+      },
+      cool: {
+        makeup: "Kokeile viileää roosaa, marjaista tai malvaan taittavaa poskipunaa. Huulille sopivat viileä pinkki, marjainen, luumu ja sinipohjainen punainen. Silmämeikissä testaa taupea, luumua, savunsinistä, grafiittia ja viileää ruskeaa.",
+        hair: "Viileään vaikutelmaan sopivia sävyjä ovat tuhkanvaalea, viileä beige, sieniruskea, viileä suklaa, viininpunainen ja pehmeä musta. Hienovaraiset tuhkaiset raidat voivat lisätä syvyyttä.",
+        style: "Kokeile selkeitä linjoja, sileää polkkaa, pitkiä kerroksia, pehmeitä laineita tai näyttävää lettiä. Viileäsävyiset hiuspinnit, metalliset klipsit ja huoliteltu kiilto voivat viimeistellä tyylin. Valitse malli hiusten rakenteen, pituuden ja oman mieltymyksen mukaan.",
+        extras: "Kokeile hopeaa, platinaa, titaania tai viileän sävyisiä korumetalleja. Kynsissä toimivat esimerkiksi marjaiset, luumuiset, sinertävät, savuiset ja viileät nude-sävyt. Toista paletin viileää sävyä asusteissa."
+      },
+      neutral: {
+        makeup: "Neutraalissa värisuunnassa voit vertailla sekä lämpimiä että viileitä vaihtoehtoja. Kokeile neutraalia roosaa, pehmeää persikkaa tai ruusupuuta poskilla; huulilla ruusua, pehmeää marjaa tai tasapainoista punaista. Silmiin sopivat taupe, pehmeä ruskea, oliivi ja harmaanruskea.",
+        hair: "Kokeile tasapainoisia beigejä, neutraalia ruskeaa, pehmeää kastanjaa, ruusuruskeaa tai neutraalia tummanvaaleaa. Sävyjen rinnakkainen vertailu auttaa löytämään sopivan lämpöisyyden.",
+        style: "Monipuoliset leikkaukset toimivat lähtökohtana: kerrostettu polkka, pitkät kerrokset, luonnolliset laineet, sileä poninhäntä tai rento nuttura. Kokeile sekä pehmeitä että selkeämpiä muotoja ja valitse omaan hiuslaatuun sopiva.",
+        extras: "Voit yhdistää kultaa, hopeaa, ruusukultaa ja muita metalleja. Kynsissä kokeile ruusupuuta, taupea, pehmeää korallia, marjaa tai neutraalia punaista. Rakenna kokonaisuus yhdistelemällä kahta tai kolmea paletin sävyä."
+      },
+      flexible: {
+        makeup: "Kun pohjasävy ei ole vielä selvillä, kokeile meikkisävyjä kasvoilla luonnonvalossa pieninä vertailuina. Aloita neutraalista roosasta, persikasta, pehmeästä ruskeasta ja marjaisista sävyistä. Huulilla voit testata neutraalia punaista tai omaa huulten sävyä korostavaa nudea.",
+        hair: "Ennen suurta värimuutosta kokeile sävynsuuntaa väliaikaisilla sävyillä, sävyttävillä tuotteilla tai digitaalisella inspiraatiotaululla. Vertaa neutraalia beigeä, tuhkaista ruskeaa, karamellia ja pehmeää kastanjaa.",
+        style: "Kokeile erilaisia muotoja: kerroksia, polkkaa, laineita, lettejä, poninhäntää ja nutturaa. Inspiraatiokuvia vertailemalla löydät, mistä pituuksista ja muodoista pidät. Kasvojen muotoa tai hiusten rakennetta ei ole vielä kartoitettu tässä demossa.",
+        extras: "Kokeile metallien yhdistelmiä ja kynsissä esimerkiksi taupea, roosaa, persikkaa, marjaa tai klassista punaista. Testaa värejä pieninä yksityiskohtina ennen kuin rakennat niistä suuremman kokonaisuuden."
+      }
+    },
+    depthAdvice: { light: "Vaaleampi värisyvyys: kokeile myös pehmeitä ja vaaleampia versioita ehdotetuista sävyistä.", medium: "Keskisyvä värimaailma: yhdistele keskisävyjä ja muutamaa vaaleampaa tai syvempää korostusta.", deep: "Syvempi värimaailma: testaa ehdotettujen sävyjen syvempiä, kylläisempiä versioita.", varied: "Vaihteleva värisyvyys: voit yhdistää vaaleita, keskisyviä ja tummia sävyjä." },
+    contrastAdvice: { soft: "Pehmeä kontrasti: kokeile sävy sävyyn -yhdistelmiä ja häivytettyjä meikkirajoja.", medium: "Keskitasoinen kontrasti: yhdistä yksi selkeämpi korostusväri rauhallisiin perussävyihin.", high: "Voimakas kontrasti: kokeile selkeämpiä rajauksia, syviä huulisävyjä tai rohkeampia väriyhdistelmiä." },
+
     skinLegend: "Ihon pohjasävy", veinsLegend: "Verisuonten väri ranteessa", veinsBlue: "Sinertävä / violetti", veinsGreen: "Vihertävä", veinsMixed: "Sekä sinertävä että vihertävä", lightblue: "Vaaleansininen", eyeGrey: "Harmaa / siniharmaa", greyGreen: "Harmaanvihreä", amber: "Meripihkanvärinen / kullanruskea", lightBrown: "Vaaleanruskea", darkBrown: "Tummanruskea / lähes musta", heterochromia: "Keskenään eriväriset silmät", platinum: "Platinablondi / jäinen vaalea", ashBlonde: "Tuhkanvaalea", goldBlonde: "Kultablondi / hunaja", darkBlonde: "Tummanvaalea", strawberry: "Mansikkablondi", copperHair: "Kupari", auburn: "Auburn / punaruskea", lightBrownHair: "Vaaleanruskea", mediumBrownHair: "Keskiruskea", darkBrownHair: "Tummanruskea", whiteHair: "Valkoinen", warm: "Lämmin", cool: "Viileä", neutral: "Neutraali", unsure: "En ole varma",
     depthLegend: "Ihon sävyn syvyys", light: "Vaalea", medium: "Keskisyvä", deep: "Tumma / syvä", varied: "Vaihtelee",
     eyesLegend: "Silmien väri", blue: "Sininen / harmaa", green: "Vihreä", hazel: "Pähkinänruskea / sekoittunut", brown: "Ruskea / hyvin tumma", other: "Muu / monivärinen",
@@ -48,6 +78,36 @@ const translations = {
     principle3Title: "Freedom to explore", principle3Text: "Colours are inspiration. Wear the colours you enjoy and feel comfortable in.",
     guideEyebrow: "Interactive demo", guideTitle: "Build your colour profile.",
     guideText: "Choose the closest options. You can skip a question if you are unsure. Each selection influences the palette or its accent colours.",
+    makeupHeading: "Makeup ideas", hairColourHeading: "Hair colours", hairstyleHeading: "Hairstyle ideas", extrasHeading: "Accessories, nails and styling",
+    beautyAdvice: {
+      warm: {
+        makeup: "Try peach, apricot or warm rose blush. Lip colours to explore include coral, warm nude, brick and tomato red. For eyes, experiment with bronze, copper, olive and warm brown.",
+        hair: "Shades to explore include honey blonde, caramel, golden brown, copper and warm chestnut. Subtle warm highlights can add dimension.",
+        style: "Try soft layers, face-framing pieces, waves, braids or a relaxed bun. Glossy finishes and warm-toned hair accessories can complete the look. Choose a cut according to your hair texture, length and personal preference.",
+        extras: "Explore warm metals such as gold, bronze, copper and brass. Nail colours could include terracotta, coral, caramel, olive or warm red. Repeat a palette shade in a scarf, bag or jewellery."
+      },
+      cool: {
+        makeup: "Try cool rose, berry or mauve blush. Lip colours include cool pink, berry, plum and blue-based red. For eyes, explore taupe, plum, smoky blue, graphite and cool brown.",
+        hair: "Shades to explore include ash blonde, cool beige, mushroom brown, cool chocolate, burgundy and soft black. Subtle ash-toned highlights can add depth.",
+        style: "Try clean lines, a sleek bob, long layers, soft waves or a defined braid. Cool-toned pins, metallic clips and a polished finish can complete the look. Choose a cut according to your hair texture, length and personal preference.",
+        extras: "Explore silver, platinum, titanium and other cool-toned metals. Nail colours could include berry, plum, blue-based, smoky and cool nude shades. Repeat a cool palette shade in your accessories."
+      },
+      neutral: {
+        makeup: "A neutral direction lets you compare both warm and cool options. Try neutral rose, soft peach or rosewood blush; for lips, explore rose, soft berry or balanced red. Taupe, soft brown, olive and grey-brown work well as eye-colour experiments.",
+        hair: "Explore balanced beige, neutral brown, soft chestnut, rose brown or neutral dark blonde. Comparing nearby shades can help you find your preferred temperature.",
+        style: "Versatile starting points include a layered bob, long layers, natural waves, a sleek ponytail or a relaxed bun. Try both soft and defined shapes, choosing what suits your hair texture.",
+        extras: "You can combine gold, silver, rose gold and other metals. Nail ideas include rosewood, taupe, soft coral, berry or neutral red. Build an outfit by combining two or three palette shades."
+      },
+      flexible: {
+        makeup: "If your undertone is not clear yet, compare makeup shades on your face in natural light. Start with neutral rose, peach, soft brown and berry tones. For lips, try a balanced red or a nude close to your natural lip colour.",
+        hair: "Before making a major colour change, test the direction with temporary colour, toning products or a digital inspiration board. Compare neutral beige, ash brown, caramel and soft chestnut.",
+        style: "Experiment with different shapes: layers, a bob, waves, braids, ponytails and buns. Comparing inspiration images can help you identify lengths and shapes you enjoy. Face shape and hair texture are not assessed in this demo yet.",
+        extras: "Try mixing metals and explore taupe, rose, peach, berry or classic red nail colours. Test colours in small details before building a larger look around them."
+      }
+    },
+    depthAdvice: { light: "Lighter colour depth: also try softer and lighter versions of the suggested shades.", medium: "Medium colour depth: combine mid-tones with a few lighter or deeper accents.", deep: "Deeper colour depth: test richer and deeper versions of the suggested shades.", varied: "Variable colour depth: combine light, medium and dark shades." },
+    contrastAdvice: { soft: "Soft contrast: experiment with tonal combinations and softly blended makeup.", medium: "Medium contrast: pair one defined accent colour with calm base shades.", high: "High contrast: try more defined eyeliner, deeper lip colours or bolder colour combinations." },
+
     skinLegend: "Skin undertone", veinsLegend: "Wrist vein colour", veinsBlue: "Blue / purple", veinsGreen: "Green", veinsMixed: "A mix of blue and green", lightblue: "Light blue", eyeGrey: "Grey / blue-grey", greyGreen: "Grey-green", amber: "Amber / golden brown", lightBrown: "Light brown", darkBrown: "Dark brown / almost black", heterochromia: "Different-coloured eyes", platinum: "Platinum / icy blonde", ashBlonde: "Ash blonde", goldBlonde: "Golden blonde / honey", darkBlonde: "Dark blonde", strawberry: "Strawberry blonde", copperHair: "Copper", auburn: "Auburn / reddish brown", lightBrownHair: "Light brown", mediumBrownHair: "Medium brown", darkBrownHair: "Dark brown", whiteHair: "White", warm: "Warm", cool: "Cool", neutral: "Neutral", unsure: "Not sure",
     depthLegend: "Skin depth", light: "Light", medium: "Medium", deep: "Deep", varied: "Varies",
     eyesLegend: "Eye colour", blue: "Blue / grey", green: "Green", hazel: "Hazel / mixed", brown: "Brown / very dark", other: "Other / multicoloured",
@@ -149,7 +209,7 @@ function createPalette(profile) {
     temperature,
     depth,
     contrast,
-    colours: [...new Set(colours)].slice(0, 11)
+    colours: [...new Set(colours)].slice(0, 16)
   };
 }
 
@@ -164,6 +224,30 @@ function renderPalette(colours) {
     swatch.style.backgroundColor = colour;
     swatch.textContent = colour;
     paletteElement.append(swatch);
+  });
+}
+
+
+// Render practical beauty and styling suggestions in the active interface language.
+function renderStyleRecommendations(result, profile, copy) {
+  const advice = copy.beautyAdvice[result.temperature];
+  const depthNote = copy.depthAdvice[result.depth];
+  const contrastNote = copy.contrastAdvice[result.contrast];
+  const content = {
+    "makeup-advice": [advice.makeup, depthNote, contrastNote],
+    "hair-colour-advice": [advice.hair, depthNote],
+    "hairstyle-advice": [advice.style],
+    "extras-advice": [advice.extras]
+  };
+
+  Object.entries(content).forEach(([elementId, paragraphs]) => {
+    const container = document.getElementById(elementId);
+    container.replaceChildren();
+    paragraphs.filter(Boolean).forEach((paragraph) => {
+      const text = document.createElement("p");
+      text.textContent = paragraph;
+      container.append(text);
+    });
   });
 }
 
@@ -264,6 +348,7 @@ document.getElementById("colour-form").addEventListener("submit", (event) => {
   ].filter(Boolean).join(" ");
 
   renderPalette(result.colours);
+  renderStyleRecommendations(result, profile, copy);
 
   const resultPanel = document.getElementById("result");
   resultPanel.hidden = false;
