@@ -132,8 +132,10 @@ const translations = {
   }
 };
 
-// Keep the current language in one place so results follow the selected interface language.
+// Keep the current language and the latest generated profile so results can be translated again.
 let language = "fi";
+let lastGeneratedResult = null;
+let lastGeneratedProfile = null;
 const languageButton = document.getElementById("language-toggle");
 
 function setLanguage(nextLanguage) {
@@ -151,6 +153,10 @@ function setLanguage(nextLanguage) {
     nextLanguage === "fi" ? "Switch language to English" : "Vaihda kieleksi suomi"
   );
   document.title = "Personal Style & Colour Guide";
+  if (lastGeneratedResult && lastGeneratedProfile) {
+    renderResultDescription(lastGeneratedResult, lastGeneratedProfile, translations[nextLanguage]);
+    renderStyleRecommendations(lastGeneratedResult, lastGeneratedProfile, translations[nextLanguage]);
+  }
 }
 
 // Palette foundations are separated by temperature, skin depth and contrast.
@@ -227,6 +233,40 @@ function renderPalette(colours) {
   });
 }
 
+
+
+// Keep the generated explanation in sync when the visitor changes language.
+function renderResultDescription(result, profile, copy) {
+  const titleKey = {
+    warm: "resultWarm",
+    cool: "resultCool",
+    neutral: "resultNeutral",
+    flexible: "resultFlexible"
+  }[result.temperature];
+  const depthKey = {
+    light: "depthLight",
+    medium: "depthMedium",
+    deep: "depthDeep",
+    varied: "depthVaried"
+  }[result.depth];
+  const contrastKey = {
+    soft: "contrastSoft",
+    medium: "contrastMedium",
+    high: "contrastHigh"
+  }[result.contrast];
+
+  document.getElementById("result-title").textContent = copy[titleKey];
+  document.getElementById("result-description").textContent = [
+    copy[result.temperature === "warm" ? "resultWarmText"
+      : result.temperature === "cool" ? "resultCoolText"
+      : result.temperature === "neutral" ? "resultNeutralText" : "resultFlexibleText"],
+    copy[depthKey],
+    copy[contrastKey],
+    profile.sun && profile.sun !== "unsure" ? copy.sunResult[profile.sun] : "",
+    profile.freckles && profile.freckles !== "unsure" ? copy.frecklesResult[profile.freckles] : "",
+    ...profile.metal.filter((metal) => copy.metalResult[metal]).map((metal) => copy.metalResult[metal])
+  ].filter(Boolean).join(" ");
+}
 
 // Render practical beauty and styling suggestions in the active interface language.
 function renderStyleRecommendations(result, profile, copy) {
@@ -315,37 +355,9 @@ document.getElementById("colour-form").addEventListener("submit", (event) => {
 
   const result = createPalette(profile);
   const copy = translations[language];
-  const titleKey = {
-    warm: "resultWarm",
-    cool: "resultCool",
-    neutral: "resultNeutral",
-    flexible: "resultFlexible"
-  }[result.temperature];
-
-  const depthKey = {
-    light: "depthLight",
-    medium: "depthMedium",
-    deep: "depthDeep",
-    varied: "depthVaried"
-  }[result.depth];
-
-  const contrastKey = {
-    soft: "contrastSoft",
-    medium: "contrastMedium",
-    high: "contrastHigh"
-  }[result.contrast];
-
-  document.getElementById("result-title").textContent = copy[titleKey];
-  document.getElementById("result-description").textContent = [
-    copy[result.temperature === "warm" ? "resultWarmText"
-      : result.temperature === "cool" ? "resultCoolText"
-      : result.temperature === "neutral" ? "resultNeutralText" : "resultFlexibleText"],
-    copy[depthKey],
-    copy[contrastKey],
-    profile.sun && profile.sun !== "unsure" ? copy.sunResult[profile.sun] : "",
-    profile.freckles && profile.freckles !== "unsure" ? copy.frecklesResult[profile.freckles] : "",
-    ...profile.metal.filter((metal) => copy.metalResult[metal]).map((metal) => copy.metalResult[metal])
-  ].filter(Boolean).join(" ");
+  lastGeneratedResult = result;
+  lastGeneratedProfile = profile;
+  renderResultDescription(result, profile, copy);
 
   renderPalette(result.colours);
   renderStyleRecommendations(result, profile, copy);
