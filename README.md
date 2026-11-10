@@ -36,6 +36,8 @@ Analyysin suunnittelussa voidaan huomioida esimerkiksi:
 - **Iho:** ihon sävy ja syvyys, pohjasävyn vivahteet, pintasävy, pisamat ja ihon sävyn vaihtelu.
 - **Silmät:** laaja värivalikoima, värien sekoittuminen, kirkkaus, kontrasti, keskusheterokromia, sektoraalinen heterokromia ja eriväriset silmät.
 - **Hiukset:** luonnollinen ja värjätty väri, juuren ja latvojen erot, raidat, liukuvärit ja moniväriset hiukset.
+- **Hiusten rakenne:** suorat, laineikkaat, kiharat, tiukasti kiharat, sekalaiset, ajellut tai hiuksettomat vaihtoehdot.
+- **Kasvojen muoto:** soikeat, pyöreät, neliömäiset, pitkät, sydämenmuotoiset, timantinmuotoiset ja kolmionmuotoiset kasvot; valintaa tukevat kuvaukset ja mittasuhteiden arviointiohjeet.
 - **Huulet:** huulten luonnollinen väri ja sen vivahteet.
 - **Muut havainnot:** esimerkiksi verisuonten havaittu sävy sekä kasvojen ja piirteiden kokonaiskontrasti.
 
@@ -53,6 +55,7 @@ Eri värianalyysijärjestelmät voivat käyttää samoja nimityksiä eri tavoin.
 - Väriperheiden ja alatyyppien esittely.
 - Henkilökohtainen väripaletti, jossa on aiempaa laajempi valikoima sävyjä.
 - Profiilin värisuunnan, syvyyden ja kontrastin mukaan mukautuvat meikki-, huulipuna-, hiusväri-, hiustyyli-, kynsilakka- ja asustevinkit.
+- Hiusten rakenteeseen ja valittuun kasvojen muotoon perustuvat hiustyyli-ideat sekä ohjeet kasvojen muodon arviointiin.
 - Vaatteiden väri- ja yhdistelyvinkit.
 - Meikki- ja huulivärivinkit.
 - Hiusten värjäyksen inspiraatio.
@@ -144,6 +147,8 @@ The analysis may take the following characteristics into account:
 - **Skin:** skin tone and depth, undertone nuances, surface colour, freckles and changes in skin tone.
 - **Eyes:** a broad range of colours, mixed colours, clarity, contrast, central heterochromia, sectoral heterochromia and complete heterochromia.
 - **Hair:** natural and dyed colours, different root and tip colours, highlights, gradients and multicoloured hair.
+- **Hair texture:** straight, wavy, curly, coily, mixed, shaved or no-hair options.
+- **Face shape:** oval, round, square, oblong, heart, diamond and triangle shapes, with descriptions and guidance for estimating proportions.
 - **Lips:** natural lip colour and its nuances.
 - **Other observations:** perceived vein colour and overall facial and feature contrast.
 
@@ -161,6 +166,7 @@ Different colour analysis systems may use the same labels in different ways. Def
 - Colour family and subtype guides.
 - Personal colour palettes with a broader range of shades.
 - Makeup, lip colour, hair colour, hairstyle, nail colour and accessory ideas adapted to the selected colour direction, depth and contrast.
+- Hairstyle ideas based on selected hair texture and face shape, plus guidance for estimating face shape.
 - Clothing colour and combination suggestions.
 - Makeup and lip colour suggestions.
 - Hair colour inspiration.
