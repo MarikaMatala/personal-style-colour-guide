@@ -13,7 +13,7 @@ const translations = {
     principle3Title: "Vapaus kokeilla", principle3Text: "Värit ovat inspiraatiota. Käytä niitä, joista itse pidät ja joissa viihdyt.",
     guideEyebrow: "Interaktiivinen demo", guideTitle: "Rakenna oma väriprofiilisi.",
     guideText: "Valitse lähimmät vaihtoehdot. Voit ohittaa kohdan, jos et ole varma. Jokainen valinta vaikuttaa paletin sävyihin tai korostusväreihin.",
-    skinLegend: "Ihon pohjasävy", warm: "Lämmin", cool: "Viileä", neutral: "Neutraali", unsure: "En ole varma",
+    skinLegend: "Ihon pohjasävy", veinsLegend: "Verisuonten väri ranteessa", veinsBlue: "Sinertävä / violetti", veinsGreen: "Vihertävä", veinsMixed: "Sekä sinertävä että vihertävä", lightblue: "Vaaleansininen", eyeGrey: "Harmaa / siniharmaa", greyGreen: "Harmaanvihreä", amber: "Meripihkanvärinen / kullanruskea", lightBrown: "Vaaleanruskea", darkBrown: "Tummanruskea / lähes musta", heterochromia: "Keskenään eriväriset silmät", platinum: "Platinablondi / jäinen vaalea", ashBlonde: "Tuhkanvaalea", goldBlonde: "Kultablondi / hunaja", darkBlonde: "Tummanvaalea", strawberry: "Mansikkablondi", copperHair: "Kupari", auburn: "Auburn / punaruskea", lightBrownHair: "Vaaleanruskea", mediumBrownHair: "Keskiruskea", darkBrownHair: "Tummanruskea", whiteHair: "Valkoinen", warm: "Lämmin", cool: "Viileä", neutral: "Neutraali", unsure: "En ole varma",
     depthLegend: "Ihon sävyn syvyys", light: "Vaalea", medium: "Keskisyvä", deep: "Tumma / syvä", varied: "Vaihtelee",
     eyesLegend: "Silmien väri", blue: "Sininen / harmaa", green: "Vihreä", hazel: "Pähkinänruskea / sekoittunut", brown: "Ruskea / hyvin tumma", other: "Muu / monivärinen",
     hairLegend: "Hiusten väri", blonde: "Vaalea / blondi", red: "Punainen / kupari", brownHair: "Ruskea", black: "Musta", grey: "Harmaa / valkoinen", dyed: "Värjätty / monivärinen",
@@ -28,6 +28,7 @@ const translations = {
     depthLight: "Paletissa painottuvat vaaleammat sävyt.", depthMedium: "Paletissa on keskitummia ja tasapainoisia sävyjä.", depthDeep: "Paletissa painottuvat syvät ja tummemmat sävyt.", depthVaried: "Mukana on sekä vaaleita että syviä vaihtoehtoja.",
     contrastSoft: "Korostusvärit ovat pehmeitä ja hillittyjä.", contrastMedium: "Korostusväreissä on maltillista erottuvuutta.", contrastHigh: "Korostusvärit ovat selkeämpiä ja voimakkaampia.",
     eyeAccent: "Silmien väristä valittu korostussävy", hairAccent: "Hiusten väristä valittu korostussävy",
+    helpTitle: "Miten vastaan tähän?", helpSkin: "Tarkastele kasvojen ihoa päivänvalossa ilman voimakasta meikkiä. Pohjasävy tarkoittaa ihon yleistä lämpö- tai viileysvaikutelmaa, ei ihon vaaleutta tai tummuutta. Jos et osaa arvioida, valitse En ole varma.", helpVeins: "Katso ranteen sisäpuolen verisuonia luonnonvalossa. Sinertävät tai violetit suonet voivat viitata viileään vaikutelmaan, vihertävät lämpimään ja molempia sisältävä neutraaliin. Tämä on vain karkea vihje: ihon sävy, valaistus ja suonten näkyvyys vaikuttavat havaintoon. Älä päättele pohjasävyä pelkästään tästä.", helpDepth: "Arvioi ihon vaaleutta tai syvyyttä, älä pohjasävyä. Vertaa kasvojen ja kaulan luonnollista sävyä päivänvalossa. Valitse Vaihtelee, jos kasvojen, kaulan ja vartalon sävyt poikkeavat selvästi.", helpEyes: "Valitse silmien hallitseva sävy luonnonvalossa. Jos iiriksessä on useita värejä, valitse lähin sekoittunut vaihtoehto tai Muu / monivärinen. Jos silmät ovat keskenään eri väriset, valitse se vaihtoehto.", helpHair: "Valitse hiusten nykyinen näkyvä väri. Jos haluat arvioida luonnollista värimaailmaasi, valitse luonnollinen hiusväri; jos haluat vinkkejä nykyiseen tyyliin, valitse nykyinen värjätty sävy. Monivärisille hiuksille sopii Värjätty / monivärinen.", helpContrast: "Vertaa hiusten, ihon ja silmien välistä eroa. Matala kontrasti näyttää pehmeältä ja sävyt ovat lähellä toisiaan; korkea kontrasti erottuu selvästi. Keskitaso on näiden väliltä. Arvioi päivänvalossa ilman filttereitä.",
     resultWarmText: "Kokeile esimerkiksi terrakottaa, lämmintä ruskeaa, oliivinvihreää ja pehmeää kultaa.",
     resultCoolText: "Kokeile esimerkiksi luumua, marjaisia sävyjä, savunsinistä ja viileitä vihreitä.",
     resultNeutralText: "Vertaile lämpimiä ja viileitä sävyjä rinnakkain, esimerkiksi taupea, ruusua, metsänvihreää ja savunsinistä.",
@@ -46,7 +47,7 @@ const translations = {
     principle3Title: "Freedom to explore", principle3Text: "Colours are inspiration. Wear the colours you enjoy and feel comfortable in.",
     guideEyebrow: "Interactive demo", guideTitle: "Build your colour profile.",
     guideText: "Choose the closest options. You can skip a question if you are unsure. Each selection influences the palette or its accent colours.",
-    skinLegend: "Skin undertone", warm: "Warm", cool: "Cool", neutral: "Neutral", unsure: "Not sure",
+    skinLegend: "Skin undertone", veinsLegend: "Wrist vein colour", veinsBlue: "Blue / purple", veinsGreen: "Green", veinsMixed: "A mix of blue and green", lightblue: "Light blue", eyeGrey: "Grey / blue-grey", greyGreen: "Grey-green", amber: "Amber / golden brown", lightBrown: "Light brown", darkBrown: "Dark brown / almost black", heterochromia: "Different-coloured eyes", platinum: "Platinum / icy blonde", ashBlonde: "Ash blonde", goldBlonde: "Golden blonde / honey", darkBlonde: "Dark blonde", strawberry: "Strawberry blonde", copperHair: "Copper", auburn: "Auburn / reddish brown", lightBrownHair: "Light brown", mediumBrownHair: "Medium brown", darkBrownHair: "Dark brown", whiteHair: "White", warm: "Warm", cool: "Cool", neutral: "Neutral", unsure: "Not sure",
     depthLegend: "Skin depth", light: "Light", medium: "Medium", deep: "Deep", varied: "Varies",
     eyesLegend: "Eye colour", blue: "Blue / grey", green: "Green", hazel: "Hazel / mixed", brown: "Brown / very dark", other: "Other / multicoloured",
     hairLegend: "Hair colour", blonde: "Blonde / light", red: "Red / copper", brownHair: "Brown", black: "Black", grey: "Grey / white", dyed: "Dyed / multicoloured",
@@ -61,6 +62,7 @@ const translations = {
     depthLight: "The palette emphasises lighter shades.", depthMedium: "The palette uses balanced, medium-depth shades.", depthDeep: "The palette emphasises deeper and darker shades.", depthVaried: "The palette includes both lighter and deeper options.",
     contrastSoft: "Accent colours are soft and muted.", contrastMedium: "Accent colours have moderate definition.", contrastHigh: "Accent colours are clearer and more vivid.",
     eyeAccent: "Accent shade selected from your eye-colour choice", hairAccent: "Accent shade selected from your hair-colour choice",
+    helpTitle: "How should I answer?", helpSkin: "Look at your skin in natural daylight without strong makeup. Undertone describes the overall warm or cool impression, not how light or deep your skin is. Choose Not sure if you cannot confidently tell.", helpVeins: "Look at the veins on the inside of your wrist in natural daylight. Blue or purple veins may suggest a cool impression, green veins a warm one, and a mix may suggest neutral. This is only a rough clue: skin tone, lighting and vein visibility affect what you see. Do not determine undertone from veins alone.", helpDepth: "Estimate how light or deep your skin appears, separately from undertone. Compare your face and neck in daylight. Choose Varies if the tones of your face, neck and body differ noticeably.", helpEyes: "Choose the dominant iris colour in natural light. If your iris contains several colours, choose the closest mixed option or Other / multicoloured. If your eyes are different colours, select that option.", helpHair: "Choose the hair colour currently visible. For your natural colour harmony, select your natural hair colour; for suggestions matching your current look, choose the colour you wear now. Choose Dyed / multicoloured for several colours.", helpContrast: "Compare the difference between your hair, skin and eyes. Low contrast looks soft, with features close in depth; high contrast is clearly defined. Medium is between these. Assess in natural light without filters.",
     resultWarmText: "Try terracotta, warm brown, olive green and soft gold.",
     resultCoolText: "Try plum, berry shades, smoky blue and cool greens.",
     resultNeutralText: "Compare warm and cool shades side by side, such as taupe, rose, forest green and smoky blue.",
@@ -112,28 +114,17 @@ const contrastAccents = {
 
 // Eye and hair selections add personal accent colours without assuming their undertone.
 const eyeAccents = {
-  blue: "#718FA5",
-  green: "#71845B",
-  hazel: "#A18A55",
-  brown: "#76513F",
-  other: "#8A7899"
+  lightblue: "#A9C7DA", blue: "#718FA5", grey: "#9AA6B2", green: "#71845B", greyGreen: "#89977C", hazel: "#A18A55", amber: "#C18A3C", lightBrown: "#A77B54", brown: "#76513F", darkBrown: "#49362F", heterochromia: "#8A7899", other: "#8A7899"
 };
 
 const hairAccents = {
-  blonde: "#D6B77A",
-  red: "#B86F55",
-  brown: "#76513F",
-  black: "#38343A",
-  grey: "#AEB4B8",
-  dyed: "#9273A6",
-  unsure: "#A78A91"
+  platinum: "#DDE0DF", ashBlonde: "#B9B3A7", goldBlonde: "#D6B77A", darkBlonde: "#A98B61", strawberry: "#C58B72", copper: "#B86F55", red: "#B86F55", auburn: "#824C3D", lightBrown: "#A77B54", mediumBrown: "#76513F", darkBrown: "#49362F", brown: "#76513F", black: "#38343A", grey: "#AEB4B8", white: "#F0EEE8", dyed: "#9273A6", unsure: "#A78A91"
 };
 
 // Convert the selected profile into a palette and a short explanation.
 function createPalette(profile) {
-  const temperature = ["warm", "cool", "neutral"].includes(profile.undertone)
-    ? profile.undertone
-    : "flexible";
+  const veinHint = profile.veins === "blue" ? "cool" : profile.veins === "green" ? "warm" : profile.veins === "mixed" ? "neutral" : "flexible";
+  const temperature = ["warm", "cool", "neutral"].includes(profile.undertone) ? profile.undertone : veinHint;
 
   const depth = profile.depth || "medium";
   const contrast = ["soft", "medium", "high"].includes(profile.contrast)
@@ -174,6 +165,43 @@ function renderPalette(colours) {
 // Apply the initial Finnish interface and handle the language toggle.
 setLanguage("fi");
 
+// Add accessible, expandable guidance to every profile question.
+const helpKeys = { undertone: "helpSkin", veins: "helpVeins", depth: "helpDepth", eyes: "helpEyes", hair: "helpHair", contrast: "helpContrast" };
+document.querySelectorAll("#colour-form fieldset").forEach((fieldset) => {
+  const fieldName = fieldset.querySelector("input")?.name;
+  const helpKey = helpKeys[fieldName];
+  if (!helpKey) return;
+  const button = document.createElement("button");
+  button.type = "button";
+  button.className = "info-button";
+  button.textContent = "i";
+  button.setAttribute("aria-expanded", "false");
+  button.setAttribute("aria-controls", `help-${fieldName}`);
+  const panel = document.createElement("p");
+  panel.className = "info-panel";
+  panel.id = `help-${fieldName}`;
+  panel.hidden = true;
+  panel.textContent = translations.fi[helpKey];
+  button.setAttribute("aria-label", translations.fi.helpTitle);
+  button.addEventListener("click", () => {
+    const open = button.getAttribute("aria-expanded") === "true";
+    button.setAttribute("aria-expanded", String(!open));
+    panel.hidden = open;
+  });
+  fieldset.append(button, panel);
+});
+const baseSetLanguage = setLanguage;
+setLanguage = function(nextLanguage) {
+  baseSetLanguage(nextLanguage);
+  document.querySelectorAll("#colour-form fieldset").forEach((fieldset) => {
+    const name = fieldset.querySelector("input")?.name;
+    const panel = fieldset.querySelector(".info-panel");
+    const button = fieldset.querySelector(".info-button");
+    if (panel && helpKeys[name]) panel.textContent = translations[nextLanguage][helpKeys[name]];
+    if (button) button.setAttribute("aria-label", translations[nextLanguage].helpTitle);
+  });
+};
+
 languageButton.addEventListener("click", () => {
   setLanguage(language === "fi" ? "en" : "fi");
 });
@@ -185,6 +213,7 @@ document.getElementById("colour-form").addEventListener("submit", (event) => {
   const formData = new FormData(event.currentTarget);
   const profile = {
     undertone: formData.get("undertone"),
+    veins: formData.get("veins"),
     depth: formData.get("depth"),
     eyes: formData.get("eyes"),
     hair: formData.get("hair"),
