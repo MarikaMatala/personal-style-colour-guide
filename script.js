@@ -143,7 +143,7 @@ function createPalette(profile) {
   const colours = [
     ...temperaturePalettes[temperature],
     ...depthAccents[depth],
-    contrastAccents[contrast][0],
+    ...contrastAccents[contrast],
     eyeAccents[profile.eyes] || eyeAccents.other,
     hairAccents[profile.hair] || hairAccents.unsure
   ];
@@ -153,7 +153,7 @@ function createPalette(profile) {
     temperature,
     depth,
     contrast,
-    colours: [...new Set(colours)].slice(0, 8)
+    colours: [...new Set(colours)].slice(0, 10)
   };
 }
 
