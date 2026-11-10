@@ -63,18 +63,16 @@ Kuvapohjainen analyysi edellyttää erityistä huolellisuutta: valaistus, kamera
 
 ### Teknologiat
 
-Suunnitellut teknologiat ja työkalut:
+Ensimmäinen selainpohjainen prototyyppi on toteutettu seuraavilla teknologioilla:
 
-- Angular – käyttöliittymäsovellus.
-- TypeScript – sovelluslogiikka.
-- HTML – rakenteen kuvaus.
-- SCSS – tyylit.
+- HTML – sivun rakenne ja sisältö.
+- CSS – responsiivinen ulkoasu ja käyttöliittymän tyylit.
+- JavaScript – kielenvaihto ja interaktiivinen väripalettidemo.
 - Figma – käyttöliittymän ja visuaalisen ilmeen suunnittelu.
-- Git ja GitHub – versionhallinta, projektinhallinta ja julkaisu.
-- GitHub Pages – mahdollinen demosivuston julkaisualusta.
-- Testaustyökalut – valitaan toteutuksen edetessä.
+- Git ja GitHub – versionhallinta ja projektinhallinta.
+- GitHub Pages – suunniteltu julkaisualusta.
 
-Teknologiat ovat projektin suunnitelma; toteutuksen tila päivitetään työn edetessä.
+Angular-, TypeScript- ja SCSS-pohjaista sovellusarkkitehtuuria voidaan tutkia myöhemmässä kehitysvaiheessa. Teknologiat ja toteutuksen tila päivitetään projektin edetessä.
 
 ### Tekoäly työskentelyn tukena ja oppimisessa
 
@@ -111,7 +109,7 @@ Värianalyysi on tyylin ja värien tutkimisen apuväline. Se ei määritä käyt
 
 ### Projektin tila
 
-**Suunnittelu / alkuvaihe.** Ominaisuudet, luokittelu ja tekninen toteutus tarkentuvat projektin edetessä.
+**Ensimmäinen selainprototyyppi on aloitettu.** Sivustolla on kaksikielinen esittelysivu ja yksinkertaistettu interaktiivinen väripalettidemo. Luokittelu, analyysin logiikka, sisältö ja tekninen toteutus ovat edelleen kehitysvaiheessa. GitHub Pages -julkaisun käyttöönotto ja testaus tehdään erikseen.
 
 ---
 
@@ -172,18 +170,16 @@ Image-based analysis requires care: lighting, camera settings, image processing,
 
 ### Technologies
 
-Planned technologies and tools:
+The first browser-based prototype uses:
 
-- Angular – frontend application.
-- TypeScript – application logic.
-- HTML – document structure.
-- SCSS – styling.
+- HTML – page structure and content.
+- CSS – responsive layout and interface styling.
+- JavaScript – language switching and interactive colour palette demo.
 - Figma – interface and visual design.
-- Git and GitHub – version control, project management and collaboration.
-- GitHub Pages – potential demo hosting platform.
-- Testing tools – to be selected as development progresses.
+- Git and GitHub – version control and project management.
+- GitHub Pages – planned hosting platform.
 
-These technologies describe the current plan; implementation status will be updated as the project evolves.
+An Angular, TypeScript and SCSS application architecture may be explored in a later development phase. Technologies and implementation status will be updated as the project evolves.
 
 ### AI Tools for Learning and Development
 
@@ -220,7 +216,7 @@ Colour analysis is a tool for exploring style and colour. It does not define a p
 
 ### Project status
 
-**Planning / early stage.** Features, classification and technical implementation will be refined as the project progresses.
+**The first browser prototype has been started.** The site now includes a bilingual introduction and a simplified interactive colour palette demo. The classification, analysis logic, content and technical implementation remain under development. GitHub Pages publishing still needs to be enabled and tested.
 
 ---
 
