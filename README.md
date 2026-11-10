@@ -55,7 +55,7 @@ Eri värianalyysijärjestelmät voivat käyttää samoja nimityksiä eri tavoin.
 - Vaatteiden väri- ja yhdistelyvinkit.
 - Meikki- ja huulivärivinkit.
 - Hiusten värjäyksen inspiraatio.
-- Korujen, metallien ja asusteiden sävyvinkit.
+- Korujen, metallien ja asusteiden sävyvinkit; useita korumateriaaleja ja korutyyppejä voi valita samanaikaisesti.
 - Silmien väriä ja kokonaiskontrastia huomioivat vinkit.
 - Suomen- ja englanninkielinen käyttöliittymä.
 
@@ -162,7 +162,7 @@ Different colour analysis systems may use the same labels in different ways. Def
 - Clothing colour and combination suggestions.
 - Makeup and lip colour suggestions.
 - Hair colour inspiration.
-- Jewellery, metal and accessory colour suggestions.
+- Jewellery, metal and accessory suggestions, with support for selecting multiple materials and jewellery types.
 - Suggestions that take eye colour and overall contrast into account.
 - Finnish and English interface.
 
