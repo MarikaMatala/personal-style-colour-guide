@@ -2,6 +2,10 @@
 
 **A bilingual (Finnish and English) demo project for personal colour exploration and style inspiration.**
 
+**Demo website:** https://marikamatala.github.io/personal-style-colour-guide/ (GitHub Pages publishing must be enabled in repository settings.)
+
+**Portfolio:** https://marikamatala.github.io/tyonaytteet.html#personal-style-colour-guide
+
 [Suomeksi](#suomeksi) · [In English](#in-english)
 
 ---
