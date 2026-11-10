@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#2d2930">
+  <meta name="robots" content="noindex">
+  <meta name="description" content="Sivua ei löytynyt — Personal Style & Colour Guide.">
+  <title>404 — Sivua ei löytynyt | Personal Style & Colour Guide</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --canvas: #f8f5ef;
+      --paper: #fff;
+      --ink: #2d2930;
+      --muted: #6b6268;
+      --plum: #6b4b5a;
+      --copper: #b86f55;
+      --sage: #82917d;
+      --gold: #c6a36a;
+      --line: #ded5ca;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 2rem 1.2rem;
+      background:
+        radial-gradient(ellipse at 15% 15%, #e9dfd2 0, transparent 34rem),
+        radial-gradient(ellipse at 90% 85%, #e8e5dc 0, transparent 30rem),
+        var(--canvas);
+      color: var(--ink);
+      font-family: Inter, "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+    .error-page {
+      width: min(100%, 980px);
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(260px, .9fr);
+      align-items: center;
+      gap: clamp(2rem, 6vw, 5rem);
+      padding: clamp(1.5rem, 5vw, 4rem);
+      background: #fffdf9d9;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      box-shadow: 0 24px 70px #2d293014;
+      overflow: hidden;
+    }
+    .eyebrow {
+      margin: 0 0 .8rem;
+      color: var(--copper);
+      font-size: .75rem;
+      font-weight: 800;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+    .brand {
+      display: inline-flex;
+      gap: .55rem;
+      align-items: center;
+      margin-bottom: 3rem;
+      color: var(--ink);
+      text-decoration: none;
+      font-weight: 800;
+      letter-spacing: -.03em;
+    }
+    .brand-mark { color: var(--copper); font-size: 1.6rem; }
+    h1 {
+      margin: 0;
+      font: 500 clamp(4.8rem, 12vw, 8rem)/.95 Georgia, "Times New Roman", serif;
+      letter-spacing: -.08em;
+      color: var(--plum);
+    }
+    h2 {
+      margin: 1.2rem 0 .8rem;
+      font: 500 clamp(2rem, 4vw, 3.2rem)/1.08 Georgia, "Times New Roman", serif;
+      letter-spacing: -.045em;
+    }
+    .message { max-width: 34rem; color: var(--muted); }
+    .actions { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 2rem; }
+    .button {
+      min-height: 48px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: .7rem;
+      padding: .75rem 1.1rem;
+      border: 1px solid var(--plum);
+      border-radius: 5px;
+      background: var(--plum);
+      color: white;
+      text-decoration: none;
+      font: inherit;
+      font-weight: 750;
+      cursor: pointer;
+    }
+    .button.secondary { background: transparent; color: var(--plum); }
+    .button:hover { filter: brightness(.93); }
+    a:focus-visible, button:focus-visible {
+      outline: 3px solid var(--gold);
+      outline-offset: 4px;
+    }
+    .art {
+      position: relative;
+      width: min(100%, 390px);
+      aspect-ratio: 1;
+      justify-self: center;
+      display: grid;
+      place-items: center;
+      isolation: isolate;
+    }
+    .art::before, .art::after {
+      content: "";
+      position: absolute;
+      inset: 9%;
+      border: 1px solid #b86f5550;
+      border-radius: 50%;
+      transform: rotate(-28deg) scaleY(.65);
+    }
+    .art::after { inset: 18% 2%; transform: rotate(38deg) scaleY(.65); }
+    .palette-orbit {
+      position: absolute;
+      inset: 4%;
+      border: 1px dashed #82917d80;
+      border-radius: 50%;
+      animation: orbit-spin 24s linear infinite;
+    }
+    .palette-core {
+      width: 39%;
+      aspect-ratio: 1;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: radial-gradient(circle at 35% 30%, #fff 0 5%, #efe9e0 6% 42%, #ded5ca 100%);
+      box-shadow: 0 12px 38px #2d29301a;
+      color: var(--plum);
+      font: italic 1.1rem Georgia, serif;
+      text-align: center;
+      z-index: 2;
+    }
+    .colour-wheel {
+      position: absolute;
+      inset: 0;
+      animation: orbit-spin 18s linear infinite;
+    }
+    .colour-chip {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 22%;
+      height: 29%;
+      border: 6px solid var(--canvas);
+      border-radius: 60% 40% 52% 48%;
+      box-shadow: 0 10px 25px #2d29301c;
+      transform-origin: 50% 50%;
+    }
+    .chip-1 { background: #a85e45; transform: translate(-50%, -50%) rotate(0deg) translateY(-142px) rotate(0deg); }
+    .chip-2 { background: #d5a06e; transform: translate(-50%, -50%) rotate(60deg) translateY(-142px) rotate(-60deg); }
+    .chip-3 { background: #687d70; transform: translate(-50%, -50%) rotate(120deg) translateY(-142px) rotate(-120deg); }
+    .chip-4 { background: #6b4b5a; transform: translate(-50%, -50%) rotate(180deg) translateY(-142px) rotate(-180deg); }
+    .chip-5 { background: #b8a17b; transform: translate(-50%, -50%) rotate(240deg) translateY(-142px) rotate(-240deg); }
+    .chip-6 { background: #7e8993; transform: translate(-50%, -50%) rotate(300deg) translateY(-142px) rotate(-300deg); }
+    .art-caption {
+      position: absolute;
+      bottom: 0;
+      color: var(--muted);
+      font-size: .68rem;
+      font-weight: 800;
+      letter-spacing: .2em;
+    }
+    .motion-control {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 42px;
+      height: 42px;
+      border: 1px solid var(--line);
+      border-radius: 50%;
+      background: var(--paper);
+      color: var(--ink);
+      cursor: pointer;
+      z-index: 3;
+    }
+    .paused .palette-orbit, .paused .colour-wheel { animation-play-state: paused; }
+    @keyframes orbit-spin { to { transform: rotate(360deg); } }
+    @media (max-width: 720px) {
+      .error-page { grid-template-columns: 1fr; text-align: center; gap: 1rem; }
+      .brand { margin-bottom: 2rem; }
+      .message { margin-inline: auto; }
+      .actions { justify-content: center; }
+      .art { width: min(84vw, 340px); order: -1; }
+      .chip-1 { transform: translate(-50%, -50%) rotate(0deg) translateY(-122px); }
+      .chip-2 { transform: translate(-50%, -50%) rotate(60deg) translateY(-122px); }
+      .chip-3 { transform: translate(-50%, -50%) rotate(120deg) translateY(-122px); }
+      .chip-4 { transform: translate(-50%, -50%) rotate(180deg) translateY(-122px); }
+      .chip-5 { transform: translate(-50%, -50%) rotate(240deg) translateY(-122px); }
+      .chip-6 { transform: translate(-50%, -50%) rotate(300deg) translateY(-122px); }
+    }
+    @media (max-width: 380px) {
+      .art { width: min(78vw, 280px); }
+      .chip-1 { transform: translate(-50%, -50%) rotate(0deg) translateY(-100px); }
+      .chip-2 { transform: translate(-50%, -50%) rotate(60deg) translateY(-100px); }
+      .chip-3 { transform: translate(-50%, -50%) rotate(120deg) translateY(-100px); }
+      .chip-4 { transform: translate(-50%, -50%) rotate(180deg) translateY(-100px); }
+      .chip-5 { transform: translate(-50%, -50%) rotate(240deg) translateY(-100px); }
+      .chip-6 { transform: translate(-50%, -50%) rotate(300deg) translateY(-100px); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; }
+    }
+  </style>
+</head>
+<body>
+  <main class="error-page">
+    <section>
+      <a class="brand" href="./" aria-label="Personal Style & Colour Guide — etusivu">
+        <span class="brand-mark" aria-hidden="true">✳</span>
+        <span>Personal Style <i>&amp;</i> Colour Guide</span>
+      </a>
+      <p class="eyebrow" data-fi="Hups — pieni harha-askel" data-en="Oops — a little detour">Hups — pieni harha-askel</p>
+      <h1>404</h1>
+      <h2 data-fi="Tämä sivu on kadottanut värinsä." data-en="This page has lost its colour.">Tämä sivu on kadottanut värinsä.</h2>
+      <p class="message" data-fi="Etsimääsi sivua ei löytynyt. Ehkä se on vaihtanut paikkaa tai osoitteessa on pieni kirjoitusvirhe. Ei hätää — palataan takaisin värien pariin." data-en="We couldn't find the page you were looking for. It may have moved, or there may be a small typo in the address. No worries — let's get back to exploring colour.">Etsimääsi sivua ei löytynyt. Ehkä se on vaihtanut paikkaa tai osoitteessa on pieni kirjoitusvirhe. Ei hätää — palataan takaisin värien pariin.</p>
+      <div class="actions">
+        <a class="button" href="./"><span data-fi="Takaisin etusivulle" data-en="Back to homepage">Takaisin etusivulle</span><span aria-hidden="true">↗</span></a>
+        <a class="button secondary" href="https://marikamatala.github.io/tyonaytteet.html#personal-style-colour-guide" data-fi="Portfolio" data-en="Portfolio">Portfolio</a>
+      </div>
+    </section>
+    <div class="art" id="palette-art" role="img" aria-label="Pyörivä koristeellinen kuuden värin paletti">
+      <div class="palette-orbit" aria-hidden="true"></div>
+      <div class="colour-wheel" aria-hidden="true">
+        <span class="colour-chip chip-1"></span><span class="colour-chip chip-2"></span>
+        <span class="colour-chip chip-3"></span><span class="colour-chip chip-4"></span>
+        <span class="colour-chip chip-5"></span><span class="colour-chip chip-6"></span>
+      </div>
+      <div class="palette-core" aria-hidden="true">colour<br>is personal</div>
+      <span class="art-caption" aria-hidden="true">FIND YOUR COLOURS</span>
+      <button class="motion-control" id="motion-toggle" type="button" aria-label="Pysäytä animaatio" title="Pysäytä animaatio">Ⅱ</button>
+    </div>
+  </main>
+  <script>
+    // Switch every user-facing message between Finnish and English.
+    const languageButton = document.createElement("button");
+    languageButton.type = "button";
+    languageButton.className = "motion-control";
+    languageButton.style.cssText = "position:fixed;top:1rem;right:1rem;width:auto;padding:0 .9rem;border-radius:99px;font-weight:800";
+    languageButton.textContent = "EN";
+    languageButton.setAttribute("aria-label", "Switch language to English");
+    document.body.append(languageButton);
+
+    let language = "fi";
+    languageButton.addEventListener("click", () => {
+      language = language === "fi" ? "en" : "fi";
+      document.documentElement.lang = language;
+      document.querySelectorAll("[data-fi][data-en]").forEach((element) => {
+        element.textContent = element.dataset[language];
+      });
+      languageButton.textContent = language === "fi" ? "EN" : "FI";
+      languageButton.setAttribute("aria-label", language === "fi" ? "Switch language to English" : "Vaihda kieleksi suomi");
+      document.title = language === "fi"
+        ? "404 — Sivua ei löytynyt | Personal Style & Colour Guide"
+        : "404 — Page not found | Personal Style & Colour Guide";
+    });
+
+    // Allow visitors to pause the decorative animation.
+    const art = document.getElementById("palette-art");
+    const motionToggle = document.getElementById("motion-toggle");
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+    if (reducedMotion.matches) {
+      art.classList.add("paused");
+      motionToggle.textContent = "▶";
+      motionToggle.setAttribute("aria-label", "Käynnistä animaatio");
+      motionToggle.title = "Käynnistä animaatio";
+    }
+
+    motionToggle.addEventListener("click", () => {
+      const paused = art.classList.toggle("paused");
+      motionToggle.textContent = paused ? "▶" : "Ⅱ";
+      motionToggle.setAttribute("aria-label", paused ? "Käynnistä animaatio" : "Pysäytä animaatio");
+      motionToggle.title = paused ? "Käynnistä animaatio" : "Pysäytä animaatio";
+    });
+  </script>
+</body>
+</html>
