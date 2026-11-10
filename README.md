@@ -76,6 +76,21 @@ Suunnitellut teknologiat ja työkalut:
 
 Teknologiat ovat projektin suunnitelma; toteutuksen tila päivitetään työn edetessä.
 
+### Tekoäly työskentelyn tukena ja oppimisessa
+
+Tässä projektissa on hyödynnetty tekoälypohjaisia työkaluja sekä projektin suunnittelun ja kehittämisen tukena että oman osaamisen ja oppimisen edistämiseksi.
+
+Työskentelyssä on hyödynnetty seuraavia työkaluja:
+
+- **ChatGPT:** ideointi, suunnittelu, ongelmanratkaisu, tekninen ohjaus ja uusien asioiden opiskelu.
+- **OpenAI Codex:** ohjelmointityön tukeminen, koodin tarkastelu ja ohjelmistokehityksen käytäntöjen oppiminen.
+- **Google Gemini:** tiedonhaku, ideointi ja vaihtoehtoisten ratkaisujen tarkastelu.
+- **Claude:** ideointi, sisältöjen arviointi ja erilaisten lähestymistapojen vertailu.
+
+Tekoälytyökaluja käytetään oppimisen tukena, ei automaattisina totuuden tai valmiiden ratkaisujen lähteinä. Niiden ehdotuksia arvioidaan kriittisesti, ja projektin keskeisenä tavoitteena on kehittää omaa osaamista, oppia uusia teknologioita ja työskentelytapoja sekä ymmärtää paremmin tekoälypohjaisten työkalujen mahdollisuuksia ja rajoituksia.
+
+Yksi projektin tavoitteista on myös harjoitella sitä, miten tekoälyä voidaan hyödyntää vastuullisesti ja tarkoituksenmukaisesti teknisessä ja luovassa työssä.
+
 ### Saavutettavuus ja vastuullisuus
 
 Saavutettavuus huomioidaan suunnittelusta lähtien. Tavoitteena ovat näppäimistöllä käytettävät toiminnot, selkeät tekstivastineet, riittävät kontrastit, responsiivisuus sekä se, ettei väri ole koskaan ainoa tapa välittää tietoa.
@@ -169,6 +184,21 @@ Planned technologies and tools:
 - Testing tools – to be selected as development progresses.
 
 These technologies describe the current plan; implementation status will be updated as the project evolves.
+
+### AI Tools for Learning and Development
+
+AI-powered tools have been used throughout this project to support planning and development, as well as personal learning and skills development.
+
+The tools used include:
+
+- **ChatGPT:** brainstorming, planning, problem-solving, technical guidance and learning new concepts.
+- **OpenAI Codex:** programming assistance, code review and learning software development practices.
+- **Google Gemini:** research, brainstorming and exploring alternative solutions.
+- **Claude:** brainstorming, content review and comparing different approaches.
+
+These tools are used as learning aids, not as automatic sources of truth or ready-made solutions. Their suggestions are critically evaluated. A central goal of the project is to develop personal skills, learn new technologies and workflows, and gain a better understanding of the capabilities and limitations of AI-powered tools.
+
+Another objective is to learn how to use AI responsibly and effectively in both technical and creative work.
 
 ### Accessibility and responsible design
 
