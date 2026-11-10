@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Personal Style & Colour Guide — tutki omaa värimaailmaasi ja rakenna henkilökohtainen väripaletti.">
+  <meta name="theme-color" content="#2d2930">
+  <title>Personal Style & Colour Guide</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Siirry sisältöön</a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Personal Style & Colour Guide">
+      <span class="brand-mark" aria-hidden="true">✳</span>
+      <span>Personal Style <i>&</i> Colour Guide</span>
+    </a>
+    <nav aria-label="Päänavigaatio">
+      <a href="#about" data-i18n="navAbout">Projektista</a>
+      <a href="#guide" data-i18n="navGuide">Väriopas</a>
+      <a href="#ai" data-i18n="navAI">Tekoäly ja oppiminen</a>
+    </nav>
+    <button class="language-toggle" id="language-toggle" type="button" aria-label="Switch language">EN</button>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="eyebrow">Henkilökohtainen väri- ja tyyliopas</p>
+        <h1 data-i18n="heroTitle">Omat värisi.<br><em>Oma tyylisi.</em></h1>
+        <p class="hero-lead" data-i18n="heroLead">Tutki värien ominaisuuksia, kokeile erilaisia yhdistelmiä ja kokoa inspiraatiota omaan tyyliisi. Ei tiukkoja sääntöjä — vain vaihtoehtoja, oivalluksia ja luovuutta.</p>
+        <a class="button button-primary" href="#guide" data-i18n="heroCta">Kokeile väriopasta <span aria-hidden="true">↘</span></a>
+      </div>
+      <div class="hero-art" aria-label="Koristeellinen väripaletti">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="swatch swatch-a"></div><div class="swatch swatch-b"></div>
+        <div class="swatch swatch-c"></div><div class="swatch swatch-d"></div>
+        <div class="swatch swatch-e"></div><div class="swatch swatch-f"></div>
+        <span class="art-caption">COLOUR IS PERSONAL</span>
+      </div>
+    </section>
+
+    <section class="intro section" id="about">
+      <p class="eyebrow" data-i18n="aboutEyebrow">Projektista</p>
+      <h2 data-i18n="aboutTitle">Lähtökohtana olet sinä.</h2>
+      <p class="section-lead" data-i18n="aboutText">Tämä kaksikielinen demo auttaa tutkimaan ihon, silmien ja hiusten värien sekä kokonaiskontrastin vaikutusta henkilökohtaiseen väripalettiin. Tulokset ovat suuntaa-antavia inspiraatiota — eivät diagnooseja tai pukeutumissääntöjä.</p>
+      <div class="principles">
+        <article><span>01</span><h3 data-i18n="principle1Title">Yksilöllisyys</h3><p data-i18n="principle1Text">Kaikkia ei tarvitse sovittaa neljään vuodenaikaan. Piirteet ja niiden yhdistelmät ovat yksilöllisiä.</p></article>
+        <article><span>02</span><h3 data-i18n="principle2Title">Monimuotoisuus</h3><p data-i18n="principle2Text">Huomioimme erilaiset ihonsävyt, silmien ja hiusten värit sekä niiden vaihtelun.</p></article>
+        <article><span>03</span><h3 data-i18n="principle3Title">Vapaus kokeilla</h3><p data-i18n="principle3Text">Värit ovat inspiraatiota. Käytä niitä, joista itse pidät ja joissa viihdyt.</p></article>
+      </div>
+    </section>
+
+    <section class="guide section" id="guide">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="guideEyebrow">Interaktiivinen demo</p>
+        <h2 data-i18n="guideTitle">Rakenna oma väriprofiilisi.</h2>
+        <p class="section-lead" data-i18n="guideText">Valitse lähimmät vaihtoehdot. Voit ohittaa kohdan, jos et ole varma. Demo kokoaa valintojesi pohjalta yleisiä värivinkkejä.</p>
+      </div>
+      <form id="colour-form" class="colour-form">
+        <fieldset>
+          <legend data-i18n="skinLegend">Ihon pohjasävy</legend>
+          <label><input type="radio" name="undertone" value="warm"><span data-i18n="warm">Lämmin</span></label>
+          <label><input type="radio" name="undertone" value="cool"><span data-i18n="cool">Viileä</span></label>
+          <label><input type="radio" name="undertone" value="neutral"><span data-i18n="neutral">Neutraali</span></label>
+          <label><input type="radio" name="undertone" value="unsure" checked><span data-i18n="unsure">En ole varma</span></label>
+        </fieldset>
+        <fieldset>
+          <legend data-i18n="depthLegend">Ihon sävyn syvyys</legend>
+          <label><input type="radio" name="depth" value="light"><span data-i18n="light">Vaalea</span></label>
+          <label><input type="radio" name="depth" value="medium" checked><span data-i18n="medium">Keskisyvä</span></label>
+          <label><input type="radio" name="depth" value="deep"><span data-i18n="deep">Tumma / syvä</span></label>
+          <label><input type="radio" name="depth" value="varied"><span data-i18n="varied">Vaihtelee</span></label>
+        </fieldset>
+        <fieldset>
+          <legend data-i18n="eyesLegend">Silmien väri</legend>
+          <label><input type="radio" name="eyes" value="blue"><span data-i18n="blue">Sininen / harmaa</span></label>
+          <label><input type="radio" name="eyes" value="green"><span data-i18n="green">Vihreä</span></label>
+          <label><input type="radio" name="eyes" value="hazel"><span data-i18n="hazel">Pähkinänruskea / sekoittunut</span></label>
+          <label><input type="radio" name="eyes" value="brown"><span data-i18n="brown">Ruskea / hyvin tumma</span></label>
+          <label><input type="radio" name="eyes" value="other"><span data-i18n="other">Muu / monivärinen</span></label>
+        </fieldset>
+        <fieldset>
+          <legend data-i18n="contrastLegend">Piirteiden kokonaiskontrasti</legend>
+          <label><input type="radio" name="contrast" value="soft"><span data-i18n="soft">Pehmeä / matala</span></label>
+          <label><input type="radio" name="contrast" value="medium" checked><span data-i18n="midContrast">Keskitasoinen</span></label>
+          <label><input type="radio" name="contrast" value="high"><span data-i18n="high">Voimakas / korkea</span></label>
+          <label><input type="radio" name="contrast" value="unsure"><span data-i18n="unsure">En ole varma</span></label>
+        </fieldset>
+        <button class="button button-primary" type="submit" data-i18n="makePalette">Luo suuntaa-antava paletti</button>
+      </form>
+      <section class="result-panel" id="result" aria-live="polite" aria-atomic="true" hidden>
+        <p class="eyebrow" data-i18n="resultEyebrow">Sinun kokeilupalettisi</p>
+        <h3 id="result-title"></h3>
+        <p id="result-description"></p>
+        <div class="palette" id="palette" aria-label="Ehdotetut värisävyt"></div>
+        <p class="result-note" data-i18n="resultNote">Tämä on yksinkertaistettu demo, ei ammattilaisen tekemä värianalyysi. Valaistus, näytön asetukset ja omat mieltymyksesi vaikuttavat värien kokemiseen.</p>
+        <button class="button button-secondary" id="reset-button" type="button" data-i18n="reset">Muokkaa valintoja</button>
+      </section>
+    </section>
+
+    <section class="ai-section section" id="ai">
+      <p class="eyebrow" data-i18n="aiEyebrow">Oppiminen ja kehittäminen</p>
+      <h2 data-i18n="aiTitle">Tekoäly työskentelyn tukena.</h2>
+      <p class="section-lead" data-i18n="aiText">Projektissa on hyödynnetty ChatGPT:tä, OpenAI Codexia, Google Geminiä ja Claudea ideointiin, suunnitteluun, tiedonhakuun, tekniseen ohjaukseen ja oppimiseen. Tavoitteena on oppia käyttämään tekoälypohjaisia työkaluja vastuullisesti ja arvioida niiden ehdotuksia kriittisesti. Oma oppiminen ja osaamisen kehittäminen ovat projektin keskiössä.</p>
+      <div class="tool-list"><span>ChatGPT</span><span>OpenAI Codex</span><span>Google Gemini</span><span>Claude</span></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">✳</span><span>Personal Style <i>&</i> Colour Guide</span></a>
+    <p data-i18n="footerText">Oppimisprojekti ja työnäyte · Suunnittelu ja kehitys etenevät vaiheittain.</p>
+    <div class="footer-links">
+      <a href="https://github.com/MarikaMatala/personal-style-colour-guide" target="_blank" rel="noopener noreferrer" data-i18n="repoLink">GitHub-repositorio ↗</a>
+      <a href="https://marikamatala.github.io/" target="_blank" rel="noopener noreferrer" data-i18n="portfolioLink">Portfolio ↗</a>
+    </div>
+  </footer>
+</body>
+</html>
