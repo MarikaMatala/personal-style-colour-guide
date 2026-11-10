@@ -2,7 +2,7 @@
 
 **A bilingual (Finnish and English) demo project for personal colour exploration and style inspiration.**
 
-**Demo website:** https://marikamatala.github.io/personal-style-colour-guide/ (GitHub Pages publishing must be enabled in repository settings.)
+**Live demo:** https://marikamatala.github.io/personal-style-colour-guide/ (GitHub Pages; deployment should be checked after publishing.)
 
 **Portfolio:** https://marikamatala.github.io/tyonaytteet.html#personal-style-colour-guide
 
@@ -74,7 +74,7 @@ Ensimmäinen selainpohjainen prototyyppi on toteutettu seuraavilla teknologioill
 - JavaScript – kielenvaihto ja interaktiivinen väripalettidemo.
 - Figma – käyttöliittymän ja visuaalisen ilmeen suunnittelu.
 - Git ja GitHub – versionhallinta ja projektinhallinta.
-- GitHub Pages – suunniteltu julkaisualusta.
+- GitHub Pages – verkkosivuston julkaisualusta.
 
 Angular-, TypeScript- ja SCSS-pohjaista sovellusarkkitehtuuria voidaan tutkia myöhemmässä kehitysvaiheessa. Teknologiat ja toteutuksen tila päivitetään projektin edetessä.
 
@@ -113,7 +113,7 @@ Värianalyysi on tyylin ja värien tutkimisen apuväline. Se ei määritä käyt
 
 ### Projektin tila
 
-**Ensimmäinen selainprototyyppi on aloitettu.** Sivustolla on kaksikielinen esittelysivu ja yksinkertaistettu interaktiivinen väripalettidemo. Luokittelu, analyysin logiikka, sisältö ja tekninen toteutus ovat edelleen kehitysvaiheessa. GitHub Pages -julkaisun käyttöönotto ja testaus tehdään erikseen.
+**Ensimmäinen selainprototyyppi on julkaistu kehitysversiona.** Sivusto sisältää suomen- ja englanninkielisen käyttöliittymän sekä interaktiivisen kokeilupaletin, jossa ihon pohjasävy, ihon syvyys, silmien ja hiusten väri sekä piirteiden kokonaiskontrasti vaikuttavat paletin muodostumiseen. Analyysilogiikka, värivalikoimat ja sisältö ovat edelleen kehitysvaiheessa. Julkaistun sivun toimivuus tarkistetaan eri selaimilla ja laitteilla.
 
 ---
 
@@ -181,7 +181,7 @@ The first browser-based prototype uses:
 - JavaScript – language switching and interactive colour palette demo.
 - Figma – interface and visual design.
 - Git and GitHub – version control and project management.
-- GitHub Pages – planned hosting platform.
+- GitHub Pages – website hosting and publishing.
 
 An Angular, TypeScript and SCSS application architecture may be explored in a later development phase. Technologies and implementation status will be updated as the project evolves.
 
@@ -220,7 +220,7 @@ Colour analysis is a tool for exploring style and colour. It does not define a p
 
 ### Project status
 
-**The first browser prototype has been started.** The site now includes a bilingual introduction and a simplified interactive colour palette demo. The classification, analysis logic, content and technical implementation remain under development. GitHub Pages publishing still needs to be enabled and tested.
+**The first browser prototype is published as a development version.** The site includes Finnish and English interfaces and an interactive exploration palette influenced by skin undertone, skin depth, eye colour, hair colour and overall feature contrast. The analysis logic, colour range and content are still under development. The published site should be checked across browsers and devices.
 
 ---
 
