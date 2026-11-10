@@ -13,7 +13,7 @@
   <a class="skip-link" href="#main">Siirry sisältöön</a>
   <header class="site-header">
     <a class="brand" href="#top" aria-label="Personal Style & Colour Guide">
-      <span class="brand-mark" aria-hidden="true">✳</span>
+      <span class="brand-mark" aria-hidden="true">🎨</span>
       <span>Personal Style <i>&</i> Colour Guide</span>
     </a>
     <nav aria-label="Päänavigaatio">
@@ -67,6 +67,13 @@
           <label><input type="radio" name="undertone" value="unsure" checked><span data-i18n="unsure">En ole varma</span></label>
         </fieldset>
         <fieldset>
+          <legend data-i18n="veinsLegend">Verisuonten väri ranteessa</legend>
+          <label><input type="radio" name="veins" value="blue"><span data-i18n="veinsBlue">Sinertävä / violetti</span></label>
+          <label><input type="radio" name="veins" value="green"><span data-i18n="veinsGreen">Vihertävä</span></label>
+          <label><input type="radio" name="veins" value="mixed"><span data-i18n="veinsMixed">Sekä sinertävä että vihertävä</span></label>
+          <label><input type="radio" name="veins" value="unsure" checked><span data-i18n="unsure">En ole varma</span></label>
+        </fieldset>
+        <fieldset>
           <legend data-i18n="depthLegend">Ihon sävyn syvyys</legend>
           <label><input type="radio" name="depth" value="light"><span data-i18n="light">Vaalea</span></label>
           <label><input type="radio" name="depth" value="medium" checked><span data-i18n="medium">Keskisyvä</span></label>
@@ -75,19 +82,34 @@
         </fieldset>
         <fieldset>
           <legend data-i18n="eyesLegend">Silmien väri</legend>
-          <label><input type="radio" name="eyes" value="blue"><span data-i18n="blue">Sininen / harmaa</span></label>
+          <label><input type="radio" name="eyes" value="lightblue"><span data-i18n="lightblue">Vaaleansininen</span></label>
+          <label><input type="radio" name="eyes" value="blue"><span data-i18n="blue">Sininen</span></label>
+          <label><input type="radio" name="eyes" value="grey"><span data-i18n="eyeGrey">Harmaa / siniharmaa</span></label>
           <label><input type="radio" name="eyes" value="green"><span data-i18n="green">Vihreä</span></label>
-          <label><input type="radio" name="eyes" value="hazel"><span data-i18n="hazel">Pähkinänruskea / sekoittunut</span></label>
-          <label><input type="radio" name="eyes" value="brown"><span data-i18n="brown">Ruskea / hyvin tumma</span></label>
+          <label><input type="radio" name="eyes" value="greyGreen"><span data-i18n="greyGreen">Harmaanvihreä</span></label>
+          <label><input type="radio" name="eyes" value="hazel"><span data-i18n="hazel">Pähkinänruskea</span></label>
+          <label><input type="radio" name="eyes" value="amber"><span data-i18n="amber">Meripihkanvärinen / kullanruskea</span></label>
+          <label><input type="radio" name="eyes" value="lightBrown"><span data-i18n="lightBrown">Vaaleanruskea</span></label>
+          <label><input type="radio" name="eyes" value="brown"><span data-i18n="brown">Keskiruskea</span></label>
+          <label><input type="radio" name="eyes" value="darkBrown"><span data-i18n="darkBrown">Tummanruskea / lähes musta</span></label>
+          <label><input type="radio" name="eyes" value="heterochromia"><span data-i18n="heterochromia">Keskenään eriväriset silmät</span></label>
           <label><input type="radio" name="eyes" value="other"><span data-i18n="other">Muu / monivärinen</span></label>
         </fieldset>
         <fieldset>
           <legend data-i18n="hairLegend">Hiusten väri</legend>
-          <label><input type="radio" name="hair" value="blonde"><span data-i18n="blonde">Vaalea / blondi</span></label>
-          <label><input type="radio" name="hair" value="red"><span data-i18n="red">Punainen / kupari</span></label>
-          <label><input type="radio" name="hair" value="brown"><span data-i18n="brownHair">Ruskea</span></label>
+          <label><input type="radio" name="hair" value="platinum"><span data-i18n="platinum">Platinablondi / jäinen vaalea</span></label>
+          <label><input type="radio" name="hair" value="ashBlonde"><span data-i18n="ashBlonde">Tuhkanvaalea</span></label>
+          <label><input type="radio" name="hair" value="goldBlonde"><span data-i18n="goldBlonde">Kultablondi / hunaja</span></label>
+          <label><input type="radio" name="hair" value="darkBlonde"><span data-i18n="darkBlonde">Tummanvaalea</span></label>
+          <label><input type="radio" name="hair" value="strawberry"><span data-i18n="strawberry">Mansikkablondi</span></label>
+          <label><input type="radio" name="hair" value="copper"><span data-i18n="copperHair">Kupari</span></label>
+          <label><input type="radio" name="hair" value="auburn"><span data-i18n="auburn">Auburn / punaruskea</span></label>
+          <label><input type="radio" name="hair" value="lightBrown"><span data-i18n="lightBrownHair">Vaaleanruskea</span></label>
+          <label><input type="radio" name="hair" value="mediumBrown"><span data-i18n="mediumBrownHair">Keskiruskea</span></label>
+          <label><input type="radio" name="hair" value="darkBrown"><span data-i18n="darkBrownHair">Tummanruskea</span></label>
           <label><input type="radio" name="hair" value="black"><span data-i18n="black">Musta</span></label>
-          <label><input type="radio" name="hair" value="grey"><span data-i18n="grey">Harmaa / valkoinen</span></label>
+          <label><input type="radio" name="hair" value="grey"><span data-i18n="grey">Harmaa / hopea</span></label>
+          <label><input type="radio" name="hair" value="white"><span data-i18n="whiteHair">Valkoinen</span></label>
           <label><input type="radio" name="hair" value="dyed"><span data-i18n="dyed">Värjätty / monivärinen</span></label>
           <label><input type="radio" name="hair" value="unsure" checked><span data-i18n="unsure">En ole varma</span></label>
         </fieldset>
@@ -119,7 +141,7 @@
   </main>
 
   <footer class="site-footer">
-    <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">✳</span><span>Personal Style <i>&</i> Colour Guide</span></a>
+    <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">🎨</span><span>Personal Style <i>&</i> Colour Guide</span></a>
     <p data-i18n="footerText">Oppimisprojekti ja työnäyte · Suunnittelu ja kehitys etenevät vaiheittain.</p>
     <div class="footer-links">
       <a href="https://github.com/MarikaMatala/personal-style-colour-guide" target="_blank" rel="noopener noreferrer" data-i18n="repoLink">GitHub-repositorio ↗</a>
