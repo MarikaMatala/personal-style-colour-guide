@@ -13,15 +13,28 @@
   <a class="skip-link" href="#main">Siirry sisältöön</a>
   <header class="site-header">
     <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">🎨</span><span>Personal Style <i>&</i> Colour Guide</span></a>
-    <nav aria-label="Päänavigaatio"><a href="index.html" data-copy="home">Etusivu</a><a href="index.html#guide" data-copy="analysis">Värianalyysi</a><a href="#families" data-copy="browse">Väriperheet</a></nav>
+    <nav aria-label="Päänavigaatio"><a href="index.html" data-copy="home">Etusivu</a><a href="index.html#guide" data-copy="analysis">Värianalyysi</a><a href="#families" data-copy="browse">Väriperheet</a><a href="#compare" data-copy="compareNav">Vertailu</a></nav>
     <button class="language-toggle" id="family-language" type="button" aria-label="Switch language">EN</button>
   </header>
   <main id="main">
     <section class="family-hero">
       <p class="eyebrow" data-copy="eyebrow">Värien inspiraatiokirjasto</p>
       <h1 data-copy="title">Tutustu <em>väriperheisiin.</em></h1>
-      <p class="section-lead" data-copy="intro">Selaa väriperheitä ilman värianalyysikyselyä. Tutki sävyjä, vertaile värimaailmoja ja kopioi haluamasi HEX-koodit.</p>
+      <p class="section-lead" data-copy="intro">Selaa väriperheitä ilman värianalyysikyselyä. Tutki sävyjä, vertaile värimaailmoja ja kopioi haluamasi HEX-koodit. Vertaa myös kahta palettia rinnakkain.</p>
       <a class="button button-primary" href="#families" data-copy="browseCta">Selaa värikarttoja ↓</a>
+    </section>
+
+    <section class="section comparison-section" id="compare">
+      <p class="eyebrow" data-copy="compareEyebrow">Väripalettien vertailu</p>
+      <h2 data-copy="compareTitle">Aseta kaksi värimaailmaa <em>rinnakkain.</em></h2>
+      <p class="section-lead" data-copy="compareIntro">Valitse kaksi väriperhettä ja tutki niiden sävyjä vierekkäin. Voit vaihtaa valintoja milloin tahansa.</p>
+      <div class="comparison-controls">
+        <label><span data-copy="firstPalette">Ensimmäinen väriperhe</span><select id="compare-first"></select></label>
+        <span class="comparison-versus" aria-hidden="true">VS</span>
+        <label><span data-copy="secondPalette">Toinen väriperhe</span><select id="compare-second"></select></label>
+      </div>
+      <div class="comparison-result" id="comparison-result" aria-live="polite"></div>
+      <p class="family-disclaimer" data-copy="compareNote">Vertailu näyttää värien digitaaliset sävyt rinnakkain. Se ei määritä, kumpi paletti sopii henkilölle paremmin.</p>
     </section>
     <section class="section" id="families">
       <p class="eyebrow" data-copy="catalogue">Väriperhekatalogi</p>
