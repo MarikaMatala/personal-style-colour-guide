@@ -1,7 +1,7 @@
 // Bilingual colour-family library. HEX values are illustrative digital swatches.
 const copy = {
- fi:{home:"Etusivu",analysis:"Värianalyysi",browse:"Väriperheet",compareNav:"Palettivertailu",compareEyebrow:"Väripalettien vertailu",compareTitle:"Aseta kaksi värimaailmaa <em>rinnakkain.</em>",compareIntro:"Valitse kaksi väriperhettä ja tutki niiden sävyjä vierekkäin. Voit vaihtaa valintoja milloin tahansa.",firstPalette:"Ensimmäinen väriperhe",secondPalette:"Toinen väriperhe",compareNote:"Vertailu näyttää värien digitaaliset sävyt rinnakkain. Se ei määritä, kumpi paletti sopii henkilölle paremmin.",eyebrow:"Värien inspiraatiokirjasto",title:"Tutustu <em>väriperheisiin.</em>",intro:"Selaa väriperheitä ilman värianalyysikyselyä. Tutki sävyjä, vertaile värimaailmoja ja kopioi haluamasi HEX-koodit. Vertaa myös kahta palettia rinnakkain.",browseCta:"Selaa värikarttoja ↓",catalogue:"Väriperhekatalogi",catalogueTitle:"Löydä kiinnostava värimaailma.",filterIntro:"Suodata väriperheitä vuodenajan, lämpötilan, vaaleuden ja värien voimakkuuden mukaan.",searchLabel:"Hae väriperhettä tai sävyä",searchPlaceholder:"Esim. oliivi, burgundi, soft summer",seasonLabel:"Vuodenaika",temperatureLabel:"Lämpötila",qualityLabel:"Värien ominaisuus",all:"Kaikki",noResults:"Näillä suodattimilla ei löytynyt väriperheitä. Kokeile muuttaa hakua.",disclaimer:"Väriperheiden nimet ja rajaukset vaihtelevat eri värianalyysijärjestelmissä. Paletit ovat inspiraatiota, eivät ehdottomia sääntöjä. Näytön asetukset ja valaistus vaikuttavat värien ulkonäköön.",footer:"Oppimisprojekti ja työnäyte · Suunnittelu ja kehitys etenevät vaiheittain.",back:"Takaisin värioppaaseen ↗",copy:"Kopioi HEX",copied:"Kopioitu",warm:"Lämmin",cool:"Viileä",neutral:"Neutraali",light:"Vaalea",deep:"Syvä",soft:"Murrettu",bright:"Kirkas",springOpt:"Kevät",summerOpt:"Kesä",autumnOpt:"Syksy",winterOpt:"Talvi",otherOpt:"Muut väriperheet"},
- en:{home:"Home",analysis:"Colour analysis",browse:"Colour families",compareNav:"Palette comparison",compareEyebrow:"Palette comparison",compareTitle:"Put two colour worlds <em>side by side.</em>",compareIntro:"Choose two colour families and explore their shades side by side. You can change either selection at any time.",firstPalette:"First colour family",secondPalette:"Second colour family",compareNote:"This comparison displays digital colour swatches side by side. It does not determine which palette suits a person better.",eyebrow:"Colour inspiration library",title:"Explore <em>colour families.</em>",intro:"Browse colour families without completing an analysis. Explore shades, compare palettes, copy HEX codes and compare two palettes side by side.",browseCta:"Browse palettes ↓",catalogue:"Colour family catalogue",catalogueTitle:"Find a colour world to explore.",filterIntro:"Filter colour families by season, temperature, depth and clarity.",searchLabel:"Search families or shades",searchPlaceholder:"E.g. olive, burgundy, soft summer",seasonLabel:"Season",temperatureLabel:"Temperature",qualityLabel:"Colour quality",all:"All",noResults:"No colour families match these filters. Try changing your search.",disclaimer:"Colour-family names and boundaries vary between colour-analysis systems. Palettes are inspiration, not strict rules. Display settings and lighting affect how colours appear.",footer:"Learning project and portfolio sample · Design and development are ongoing.",back:"Back to the colour guide ↗",copy:"Copy HEX",copied:"Copied",warm:"Warm",cool:"Cool",neutral:"Neutral",light:"Light",deep:"Deep",soft:"Soft",bright:"Bright",springOpt:"Spring",summerOpt:"Summer",autumnOpt:"Autumn",winterOpt:"Winter",otherOpt:"Other colour families"}
+ fi:{home:"Etusivu",analysis:"Värianalyysi",browse:"Väriperheet",compareNav:"Palettivertailu",compareEyebrow:"Väripalettien vertailu",compareTitle:"Aseta kaksi värimaailmaa <em>rinnakkain.</em>",compareIntro:"Valitse kaksi väriperhettä ja tutki niiden sävyjä vierekkäin. Voit vaihtaa valintoja milloin tahansa.",firstPalette:"Ensimmäinen väriperhe",secondPalette:"Toinen väriperhe",compareNote:"Vertailu näyttää värien digitaaliset sävyt rinnakkain. Se ei määritä, kumpi paletti sopii henkilölle paremmin.",builderEyebrow:"Oma väripaletti",builderTitle:"Rakenna <em>oma väripalettisi.</em>",builderIntro:"Poimi yksittäisiä sävyjä eri väriperheistä ja kokoa niistä oma yhdistelmäsi.",builderFamilyLabel:"Väriperhe",builderColourLabel:"Värisävy",builderAdd:"Lisää palettiin +",builderYourPalette:"Oma palettisi",builderCopy:"Kopioi kaikki HEX-koodit",builderClear:"Tyhjennä paletti",builderNote:"Palettisi tallentuu tämän selaimen paikalliseen tallennustilaan. Voit koota enintään 12 sävyä. Paletti ei ole värianalyysitulos, vaan oma luova yhdistelmäsi.",builderEmpty:"Paletissasi ei ole vielä sävyjä.",builderLimit:"Paletissa voi olla enintään 12 sävyä.",builderAdded:"Sävy lisätty palettiin.",builderRemoved:"Sävy poistettu.",builderCopied:"HEX-koodit kopioitu.",builderCleared:"Paletti tyhjennetty.",builderNothing:"Lisää ensin vähintään yksi sävy.",builderDuplicate:"Tämä sävy on jo paletissasi.",eyebrow:"Värien inspiraatiokirjasto",title:"Tutustu <em>väriperheisiin.</em>",intro:"Selaa väriperheitä ilman värianalyysikyselyä. Tutki sävyjä, vertaile värimaailmoja ja kopioi haluamasi HEX-koodit. Vertaa myös kahta palettia rinnakkain.",browseCta:"Selaa värikarttoja ↓",catalogue:"Väriperhekatalogi",catalogueTitle:"Löydä kiinnostava värimaailma.",filterIntro:"Suodata väriperheitä vuodenajan, lämpötilan, vaaleuden ja värien voimakkuuden mukaan.",searchLabel:"Hae väriperhettä tai sävyä",searchPlaceholder:"Esim. oliivi, burgundi, soft summer",seasonLabel:"Vuodenaika",temperatureLabel:"Lämpötila",qualityLabel:"Värien ominaisuus",all:"Kaikki",noResults:"Näillä suodattimilla ei löytynyt väriperheitä. Kokeile muuttaa hakua.",disclaimer:"Väriperheiden nimet ja rajaukset vaihtelevat eri värianalyysijärjestelmissä. Paletit ovat inspiraatiota, eivät ehdottomia sääntöjä. Näytön asetukset ja valaistus vaikuttavat värien ulkonäköön.",footer:"Oppimisprojekti ja työnäyte · Suunnittelu ja kehitys etenevät vaiheittain.",back:"Takaisin värioppaaseen ↗",copy:"Kopioi HEX",copied:"Kopioitu",warm:"Lämmin",cool:"Viileä",neutral:"Neutraali",light:"Vaalea",deep:"Syvä",soft:"Murrettu",bright:"Kirkas",springOpt:"Kevät",summerOpt:"Kesä",autumnOpt:"Syksy",winterOpt:"Talvi",otherOpt:"Muut väriperheet"},
+ en:{home:"Home",analysis:"Colour analysis",browse:"Colour families",compareNav:"Palette comparison",compareEyebrow:"Palette comparison",compareTitle:"Put two colour worlds <em>side by side.</em>",compareIntro:"Choose two colour families and explore their shades side by side. You can change either selection at any time.",firstPalette:"First colour family",secondPalette:"Second colour family",compareNote:"This comparison displays digital colour swatches side by side. It does not determine which palette suits a person better.",builderEyebrow:"Your custom palette",builderTitle:"Build <em>your own palette.</em>",builderIntro:"Pick individual shades from different colour families and combine them into a palette of your own.",builderFamilyLabel:"Colour family",builderColourLabel:"Colour shade",builderAdd:"Add to palette +",builderYourPalette:"Your palette",builderCopy:"Copy all HEX codes",builderClear:"Clear palette",builderNote:"Your palette is saved in this browser’s local storage. You can add up to 12 shades. This is a creative combination, not a colour-analysis result.",builderEmpty:"Your palette is empty for now.",builderLimit:"Your palette can contain up to 12 shades.",builderAdded:"Shade added to your palette.",builderRemoved:"Shade removed.",builderCopied:"HEX codes copied.",builderCleared:"Palette cleared.",builderNothing:"Add at least one shade first.",builderDuplicate:"This shade is already in your palette.",eyebrow:"Colour inspiration library",title:"Explore <em>colour families.</em>",intro:"Browse colour families without completing an analysis. Explore shades, compare palettes, copy HEX codes and compare two palettes side by side.",browseCta:"Browse palettes ↓",catalogue:"Colour family catalogue",catalogueTitle:"Find a colour world to explore.",filterIntro:"Filter colour families by season, temperature, depth and clarity.",searchLabel:"Search families or shades",searchPlaceholder:"E.g. olive, burgundy, soft summer",seasonLabel:"Season",temperatureLabel:"Temperature",qualityLabel:"Colour quality",all:"All",noResults:"No colour families match these filters. Try changing your search.",disclaimer:"Colour-family names and boundaries vary between colour-analysis systems. Palettes are inspiration, not strict rules. Display settings and lighting affect how colours appear.",footer:"Learning project and portfolio sample · Design and development are ongoing.",back:"Back to the colour guide ↗",copy:"Copy HEX",copied:"Copied",warm:"Warm",cool:"Cool",neutral:"Neutral",light:"Light",deep:"Deep",soft:"Soft",bright:"Bright",springOpt:"Spring",summerOpt:"Summer",autumnOpt:"Autumn",winterOpt:"Winter",otherOpt:"Other colour families"}
 };
 const families = [
  {season:"spring",name:"Light Spring",fi:"Vaalea kevät",temp:"warm",quality:["light","bright"],descFi:"Vaalea, lämmin ja raikas kokonaisuus. Kokeile kirkkaita mutta kevyitä sävyjä.",descEn:"A light, warm and fresh palette. Explore clear yet delicate shades.",colors:[["Vanilla","Vanilja","#F4E6B8"],["Peach","Persikka","#F4B995"],["Apricot","Aprikoosi","#EFA477"],["Light Coral","Vaalea koralli","#EF8F7B"],["Aqua","Akvamariini","#83C9C2"],["Mint","Minttu","#A8D5B5"],["Warm Sky","Lämmin taivaansininen","#8FC4D6"],["Butter Yellow","Voinkeltainen","#F2D56B"],["Light Camel","Vaalea kameli","#C9A477"],["Warm Pink","Lämmin pinkki","#E99A9B"]]},
@@ -73,6 +73,7 @@ function setFamilyLanguage(lang){
  document.title=lang==="fi"?"Väriperheet — Personal Style & Colour Guide":"Colour Families — Personal Style & Colour Guide";
  renderFamilies();
  if(document.getElementById("compare-first"))setupComparison();
+ if(document.getElementById("builder-family"))setupCustomPalette();
 }
 ["family-search","season-filter","temperature-filter","quality-filter"].forEach(id=>document.getElementById(id).addEventListener("input",renderFamilies));
 document.getElementById("family-language").addEventListener("click",()=>setFamilyLanguage(currentLanguage==="fi"?"en":"fi"));
@@ -143,5 +144,66 @@ function renderComparison(){
   card.append(title,description,metadata,count,swatches);result.append(card);
  });
 }
+
+// Build a custom palette from individual shades across the colour-family library.
+const CUSTOM_PALETTE_KEY="personal-style-custom-palette";
+const MAX_CUSTOM_COLOURS=12;
+let customPalette=[];
+function loadCustomPalette(){
+ try{const saved=JSON.parse(localStorage.getItem(CUSTOM_PALETTE_KEY)||"[]");customPalette=Array.isArray(saved)?saved.filter(item=>item&&typeof item.hex==="string"&&/^#[0-9a-f]{6}$/i.test(item.hex)).slice(0,MAX_CUSTOM_COLOURS):[]}catch{customPalette=[]}
+}
+function saveCustomPalette(){try{localStorage.setItem(CUSTOM_PALETTE_KEY,JSON.stringify(customPalette))}catch{}}
+function setupCustomPalette(){
+ const familySelect=document.getElementById("builder-family"),colourSelect=document.getElementById("builder-colour");
+ if(!familySelect||!colourSelect)return;
+ const previousFamily=familySelect.value,previousColour=colourSelect.value;
+ familySelect.replaceChildren();
+ families.forEach((family,index)=>{const option=document.createElement("option");option.value=String(index);option.textContent=comparisonFamilyLabel(family);familySelect.append(option)});
+ familySelect.value=previousFamily||"0";populateBuilderColours(previousColour);
+ familySelect.onchange=()=>populateBuilderColours();
+ document.getElementById("builder-add").onclick=addCustomColour;
+ document.getElementById("builder-copy").onclick=copyCustomPalette;
+ document.getElementById("builder-clear").onclick=clearCustomPalette;
+ renderCustomPalette();
+}
+function populateBuilderColours(previousValue=""){
+ const family=families[Number(document.getElementById("builder-family").value)]||families[0],select=document.getElementById("builder-colour");
+ select.replaceChildren();
+ family.colors.forEach(([en,fi,hex],index)=>{const option=document.createElement("option");option.value=String(index);option.textContent=(currentLanguage==="fi"?fi:en)+" · "+hex;select.append(option)});
+ if(previousValue&&family.colors[Number(previousValue)])select.value=previousValue;
+}
+function addCustomColour(){
+ const family=families[Number(document.getElementById("builder-family").value)],colour=family?.colors[Number(document.getElementById("builder-colour").value)];
+ if(!colour)return;
+ const [en,fi,hex]=colour,status=document.getElementById("builder-status");
+ if(customPalette.some(item=>item.hex.toLowerCase()===hex.toLowerCase())){status.textContent=copy[currentLanguage].builderDuplicate;return}
+ if(customPalette.length>=MAX_CUSTOM_COLOURS){status.textContent=copy[currentLanguage].builderLimit;return}
+ customPalette.push({nameEn:en,nameFi:fi,hex,familyEn:family.name,familyFi:family.fi});saveCustomPalette();renderCustomPalette();status.textContent=copy[currentLanguage].builderAdded;
+}
+function renderCustomPalette(){
+ const container=document.getElementById("custom-palette");if(!container)return;container.replaceChildren();
+ customPalette.forEach((item,index)=>{
+  const card=document.createElement("article");card.className="custom-swatch";
+  const colour=document.createElement("div");colour.className="custom-swatch-colour";colour.style.backgroundColor=item.hex;
+  const name=document.createElement("strong");name.textContent=currentLanguage==="fi"?item.nameFi:item.nameEn;
+  const hex=document.createElement("code");hex.textContent=item.hex;
+  const family=document.createElement("small");family.textContent=currentLanguage==="fi"?item.familyFi:item.familyEn;
+  const remove=document.createElement("button");remove.type="button";remove.className="custom-swatch-remove";remove.textContent="×";
+  remove.setAttribute("aria-label",(currentLanguage==="fi"?"Poista ":"Remove ")+(currentLanguage==="fi"?item.nameFi:item.nameEn));
+  remove.onclick=()=>{customPalette.splice(index,1);saveCustomPalette();renderCustomPalette();document.getElementById("builder-status").textContent=copy[currentLanguage].builderRemoved};
+  card.append(colour,name,hex,family,remove);container.append(card);
+ });
+ if(customPalette.length===0){const empty=document.createElement("p");empty.className="builder-empty";empty.textContent=copy[currentLanguage].builderEmpty;container.append(empty)}
+ document.getElementById("builder-count").textContent=customPalette.length+" / "+MAX_CUSTOM_COLOURS;
+ document.getElementById("builder-copy").disabled=customPalette.length===0;document.getElementById("builder-clear").disabled=customPalette.length===0;
+}
+async function copyCustomPalette(){
+ const status=document.getElementById("builder-status");
+ if(!customPalette.length){status.textContent=copy[currentLanguage].builderNothing;return}
+ const text=customPalette.map(item=>item.hex).join("\n");
+ try{await navigator.clipboard.writeText(text);status.textContent=copy[currentLanguage].builderCopied}catch{status.textContent=text}
+}
+function clearCustomPalette(){customPalette=[];saveCustomPalette();renderCustomPalette();document.getElementById("builder-status").textContent=copy[currentLanguage].builderCleared}
+loadCustomPalette();
 
 setFamilyLanguage("fi");
