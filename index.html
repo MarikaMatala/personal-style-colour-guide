@@ -20,6 +20,7 @@
     <nav aria-label="Päänavigaatio">
       <a href="#about" data-i18n="navAbout">Projektista</a>
       <a href="#guide" data-i18n="navGuide">Väriopas</a>
+      <a href="colour-families.html" data-i18n="navFamilies">Väriperheet</a>
       <a href="#ai" data-i18n="navAI">Tekoäly ja oppiminen</a>
     </nav>
     <button class="language-toggle" id="language-toggle" type="button" aria-label="Switch language">EN</button>
@@ -32,6 +33,7 @@
         <h1 data-i18n="heroTitle">Omat värisi.<br><em>Oma tyylisi.</em></h1>
         <p class="hero-lead" data-i18n="heroLead">Tutki värien ominaisuuksia, kokeile erilaisia yhdistelmiä ja kokoa inspiraatiota omaan tyyliisi. Ei tiukkoja sääntöjä — vain vaihtoehtoja, oivalluksia ja luovuutta.</p>
         <a class="button button-primary" href="#guide" data-i18n="heroCta">Kokeile väriopasta <span aria-hidden="true">↘</span></a>
+        <a class="button button-secondary" href="colour-families.html" data-i18n="familiesCta">Selaa väriperheitä</a>
       </div>
       <div class="hero-art" aria-label="Koristeellinen väripaletti">
         <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
@@ -65,6 +67,9 @@
           <label><input type="radio" name="undertone" value="warm"><span data-i18n="warm">Lämmin</span></label>
           <label><input type="radio" name="undertone" value="cool"><span data-i18n="cool">Viileä</span></label>
           <label><input type="radio" name="undertone" value="neutral"><span data-i18n="neutral">Neutraali</span></label>
+          <label><input type="radio" name="undertone" value="olive"><span data-i18n="olive">Oliivinen</span></label>
+          <label><input type="radio" name="undertone" value="neutralWarm"><span data-i18n="neutralWarm">Neutraali-lämmin</span></label>
+          <label><input type="radio" name="undertone" value="neutralCool"><span data-i18n="neutralCool">Neutraali-viileä</span></label>
           <label><input type="radio" name="undertone" value="unsure" checked><span data-i18n="unsure">En ole varma</span></label>
         </fieldset>
         <fieldset>
@@ -76,17 +81,22 @@
         </fieldset>
         <fieldset>
           <legend data-i18n="depthLegend">Ihon sävyn syvyys</legend>
+          <label><input type="radio" name="depth" value="veryLight"><span data-i18n="veryLight">Erittäin vaalea</span></label>
           <label><input type="radio" name="depth" value="light"><span data-i18n="light">Vaalea</span></label>
           <label><input type="radio" name="depth" value="medium" checked><span data-i18n="medium">Keskisyvä</span></label>
           <label><input type="radio" name="depth" value="deep"><span data-i18n="deep">Tumma / syvä</span></label>
+          <label><input type="radio" name="depth" value="veryDeep"><span data-i18n="veryDeep">Erittäin tumma</span></label>
           <label><input type="radio" name="depth" value="varied"><span data-i18n="varied">Vaihtelee</span></label>
         </fieldset>
         <fieldset>
           <legend data-i18n="eyesLegend">Silmien väri</legend>
           <label><input type="radio" name="eyes" value="lightblue"><span data-i18n="lightblue">Vaaleansininen</span></label>
           <label><input type="radio" name="eyes" value="blue"><span data-i18n="blue">Sininen</span></label>
+          <label><input type="radio" name="eyes" value="darkBlue"><span data-i18n="darkBlue">Tummansininen</span></label>
+          <label><input type="radio" name="eyes" value="turquoise"><span data-i18n="turquoise">Turkoosi</span></label>
           <label><input type="radio" name="eyes" value="grey"><span data-i18n="eyeGrey">Harmaa / siniharmaa</span></label>
           <label><input type="radio" name="eyes" value="green"><span data-i18n="green">Vihreä</span></label>
+          <label><input type="radio" name="eyes" value="oliveGreen"><span data-i18n="oliveGreen">Oliivinvihreä</span></label>
           <label><input type="radio" name="eyes" value="greyGreen"><span data-i18n="greyGreen">Harmaanvihreä</span></label>
           <label><input type="radio" name="eyes" value="hazel"><span data-i18n="hazel">Pähkinänruskea</span></label>
           <label><input type="radio" name="eyes" value="amber"><span data-i18n="amber">Meripihkanvärinen / kullanruskea</span></label>
@@ -94,6 +104,7 @@
           <label><input type="radio" name="eyes" value="brown"><span data-i18n="brown">Keskiruskea</span></label>
           <label><input type="radio" name="eyes" value="darkBrown"><span data-i18n="darkBrown">Tummanruskea / lähes musta</span></label>
           <label><input type="radio" name="eyes" value="heterochromia"><span data-i18n="heterochromia">Keskenään eriväriset silmät</span></label>
+          <label><input type="radio" name="eyes" value="centralHeterochromia"><span data-i18n="centralHeterochromia">Keskusheterokromia / eri värinen keskusta</span></label>
           <label><input type="radio" name="eyes" value="other"><span data-i18n="other">Muu / monivärinen</span></label>
         </fieldset>
         <fieldset>
@@ -136,6 +147,8 @@
           <label><input type="radio" name="faceShape" value="heart"><span data-i18n="faceHeart">Sydämenmuotoiset</span></label>
           <label><input type="radio" name="faceShape" value="diamond"><span data-i18n="faceDiamond">Timantinmuotoiset</span></label>
           <label><input type="radio" name="faceShape" value="triangle"><span data-i18n="faceTriangle">Kolmionmuotoiset</span></label>
+          <label><input type="radio" name="faceShape" value="invertedTriangle"><span data-i18n="faceInvertedTriangle">Käänteinen kolmio</span></label>
+          <label><input type="radio" name="faceShape" value="long"><span data-i18n="faceLong">Pitkulaiset</span></label>
           <label><input type="radio" name="faceShape" value="unsure" checked><span data-i18n="unsure">En ole varma</span></label>
         </fieldset>
         <fieldset>
@@ -216,6 +229,7 @@
     <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">🎨</span><span>Personal Style <i>&</i> Colour Guide</span></a>
     <p data-i18n="footerText">Oppimisprojekti ja työnäyte · Suunnittelu ja kehitys etenevät vaiheittain.</p>
     <div class="footer-links">
+      <a href="colour-families.html" data-i18n="footerFamilies">Väriperheet ↗</a>
       <a href="https://github.com/MarikaMatala/personal-style-colour-guide" target="_blank" rel="noopener noreferrer" data-i18n="repoLink">GitHub-repositorio ↗</a>
       <a href="https://marikamatala.github.io/" target="_blank" rel="noopener noreferrer" data-i18n="portfolioLink">Portfolio ↗</a>
     </div>
