@@ -41,10 +41,18 @@
       <h2 data-copy="builderTitle">Rakenna <em>oma väripalettisi.</em></h2>
       <p class="section-lead" data-copy="builderIntro">Poimi yksittäisiä sävyjä eri väriperheistä ja kokoa niistä oma yhdistelmäsi.</p>
       <div class="builder-controls">
-        <label><span data-copy="builderFamilyLabel">Väriperhe</span><select id="builder-family"></select></label>
-        <label><span data-copy="builderColourLabel">Värisävy</span><select id="builder-colour"></select></label>
-        <button class="button button-primary" id="builder-add" type="button" data-copy="builderAdd">Lisää palettiin +</button>
+        <div class="builder-field">
+          <div class="builder-label-row"><label for="builder-family" data-copy="builderFamilyLabel">Väriperhe</label><button class="info-button" id="builder-family-info-button" type="button" aria-expanded="false" aria-controls="builder-family-info" data-copy="builderInfoButton" aria-label="Lisätietoa väriperheen valinnasta">i</button></div>
+          <p class="info-panel" id="builder-family-info" data-copy="builderFamilyInfo" hidden>Väriperhe kertoo, millaiseen vuodenaika- ja värimaailmaan sävyt kuuluvat. Voit valita minkä tahansa perheen – eri perheiden värejä saa yhdistellä vapaasti.</p>
+          <select id="builder-family"></select>
+        </div>
+        <div class="builder-field">
+          <div class="builder-label-row"><label for="builder-colour" data-copy="builderColourLabel">Värisävy</label><button class="info-button" id="builder-colour-info-button" type="button" aria-expanded="false" aria-controls="builder-colour-info" data-copy="builderInfoButton" aria-label="Lisätietoa värisävyn valinnasta">i</button></div>
+          <p class="info-panel" id="builder-colour-info" data-copy="builderColourInfo" hidden>Valitse yksittäinen sävy ja tarkista sen HEX-koodi. Voit lisätä palettiin sävyjä useista eri väriperheistä.</p>
+          <select id="builder-colour"></select>
+        </div>
       </div>
+      <button class="button button-primary builder-add-button" id="builder-add" type="button" data-copy="builderAdd">Kokeile valittua sävyä +</button>
       <div class="builder-heading"><h3 data-copy="builderYourPalette">Oma palettisi</h3><span id="builder-count" aria-live="polite">0 / 12</span></div>
       <div class="custom-palette-grid" id="custom-palette" aria-live="polite"></div>
       <p class="builder-status" id="builder-status" role="status" aria-live="polite"></p>
