@@ -52,7 +52,8 @@ Eri värianalyysijärjestelmät voivat käyttää samoja nimityksiä eri tavoin.
 ### Suunnitellut ominaisuudet
 
 - Manuaalinen värianalyysi ja käyttäjän oma profiili.
-- Väriperheiden ja alatyyppien esittely.
+- Oma kaksikielinen Colour Families -sivu, jossa voi selata ja suodattaa väriperheitä ilman analyysikyselyä.
+- Väriperheiden ja alatyyppien esittely värinäytteineen, HEX-koodeineen ja kopiointitoiminnolla.
 - Henkilökohtainen väripaletti, jossa on aiempaa laajempi valikoima sävyjä.
 - Profiilin värisuunnan, syvyyden ja kontrastin mukaan mukautuvat meikki-, huulipuna-, hiusväri-, hiustyyli-, kynsilakka- ja asustevinkit.
 - Hiusten rakenteeseen ja valittuun kasvojen muotoon perustuvat hiustyyli-ideat sekä ohjeet kasvojen muodon arviointiin.
@@ -163,7 +164,8 @@ Different colour analysis systems may use the same labels in different ways. Def
 ### Planned features
 
 - Manual colour analysis and a user profile.
-- Colour family and subtype guides.
+- A dedicated bilingual Colour Families page for browsing and filtering colour families without completing the analysis.
+- Colour family and subtype guides with swatches, HEX values and copy-to-clipboard controls.
 - Personal colour palettes with a broader range of shades.
 - Makeup, lip colour, hair colour, hairstyle, nail colour and accessory ideas adapted to the selected colour direction, depth and contrast.
 - Hairstyle ideas based on selected hair texture and face shape, plus guidance for estimating face shape.
