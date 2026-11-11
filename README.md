@@ -10,6 +10,11 @@
 
 ---
 
+
+## Security and privacy
+
+The demo's data-handling boundaries and responsible vulnerability-reporting guidance are documented in [SECURITY.md](SECURITY.md). The palette builder uses this browser's local storage; avoid entering sensitive information.
+
 ## Suomeksi
 
 ### Projektista
