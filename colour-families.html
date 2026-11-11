@@ -36,6 +36,24 @@
       <div class="comparison-result" id="comparison-result" aria-live="polite"></div>
       <p class="family-disclaimer" data-copy="compareNote">Vertailu näyttää värien digitaaliset sävyt rinnakkain. Se ei määritä, kumpi paletti sopii henkilölle paremmin.</p>
     </section>
+    <section class="section custom-builder-section" id="custom-builder">
+      <p class="eyebrow" data-copy="builderEyebrow">Oma väripaletti</p>
+      <h2 data-copy="builderTitle">Rakenna <em>oma väripalettisi.</em></h2>
+      <p class="section-lead" data-copy="builderIntro">Poimi yksittäisiä sävyjä eri väriperheistä ja kokoa niistä oma yhdistelmäsi.</p>
+      <div class="builder-controls">
+        <label><span data-copy="builderFamilyLabel">Väriperhe</span><select id="builder-family"></select></label>
+        <label><span data-copy="builderColourLabel">Värisävy</span><select id="builder-colour"></select></label>
+        <button class="button button-primary" id="builder-add" type="button" data-copy="builderAdd">Lisää palettiin +</button>
+      </div>
+      <div class="builder-heading"><h3 data-copy="builderYourPalette">Oma palettisi</h3><span id="builder-count" aria-live="polite">0 / 12</span></div>
+      <div class="custom-palette-grid" id="custom-palette" aria-live="polite"></div>
+      <p class="builder-status" id="builder-status" role="status" aria-live="polite"></p>
+      <div class="builder-actions">
+        <button class="button button-secondary" id="builder-copy" type="button" data-copy="builderCopy">Kopioi kaikki HEX-koodit</button>
+        <button class="button button-secondary" id="builder-clear" type="button" data-copy="builderClear">Tyhjennä paletti</button>
+      </div>
+      <p class="family-disclaimer" data-copy="builderNote">Palettisi tallentuu tämän selaimen paikalliseen tallennustilaan. Voit koota enintään 12 sävyä. Paletti ei ole värianalyysitulos, vaan oma luova yhdistelmäsi.</p>
+    </section>
     <section class="section" id="families">
       <p class="eyebrow" data-copy="catalogue">Väriperhekatalogi</p>
       <h2 data-copy="catalogueTitle">Löydä kiinnostava värimaailma.</h2>
