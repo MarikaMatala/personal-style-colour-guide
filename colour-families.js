@@ -70,6 +70,10 @@ function setFamilyLanguage(lang){
  document.querySelectorAll("[data-placeholder]").forEach(el=>el.placeholder=copy[lang][el.dataset.placeholder]);
  document.getElementById("family-language").textContent=lang==="fi"?"EN":"FI";
  document.getElementById("family-language").setAttribute("aria-label",lang==="fi"?"Switch language to English":"Vaihda kieleksi suomi");
+ const familyInfo=document.getElementById("builder-family-info-button");
+ const colourInfo=document.getElementById("builder-colour-info-button");
+ if(familyInfo)familyInfo.setAttribute("aria-label",lang==="fi"?"Lisätietoa väriperheen valinnasta":"More information about choosing a colour family");
+ if(colourInfo)colourInfo.setAttribute("aria-label",lang==="fi"?"Lisätietoa värisävyn valinnasta":"More information about choosing a colour shade");
  document.title=lang==="fi"?"Väriperheet — Personal Style & Colour Guide":"Colour Families — Personal Style & Colour Guide";
  renderFamilies();
  if(document.getElementById("compare-first"))setupComparison();
