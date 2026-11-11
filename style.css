@@ -92,3 +92,16 @@
 .builder-controls select:focus-visible,.custom-swatch-remove:focus-visible,.builder-actions button:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
 @media(max-width:850px){.builder-controls{grid-template-columns:1fr 1fr}.builder-controls .button{justify-self:start}}
 @media(max-width:540px){.builder-controls{grid-template-columns:1fr}.builder-heading{margin-top:1.8rem}.custom-palette-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* Clear selection guidance and a prominent custom-palette action. */
+.builder-controls{grid-template-columns:repeat(2,minmax(0,1fr));align-items:start}
+.builder-field{display:grid;gap:.55rem;min-width:0}
+.builder-label-row{display:flex;align-items:center;gap:.25rem}
+.builder-label-row label{font-weight:750}
+.builder-field select{width:100%;min-width:0;padding:.85rem 1rem;border:1px solid var(--line);border-radius:7px;background:var(--canvas);color:var(--ink);font:inherit}
+.builder-field .info-button{flex:0 0 auto;margin:0}
+.builder-field .info-panel{margin:0}
+.builder-add-button{display:flex;width:min(100%,1000px);min-height:64px;justify-content:center;align-items:center;margin:1.3rem 0 2rem;padding:1.1rem 1.5rem;font-size:1.15rem;font-weight:800;letter-spacing:.01em;box-shadow:0 8px 20px #6b4b5a25}
+.builder-add-button:hover{transform:translateY(-1px)}
+.builder-add-button:focus-visible{outline:3px solid var(--gold);outline-offset:4px}
+@media(max-width:540px){.builder-controls{grid-template-columns:1fr}.builder-add-button{min-height:60px;font-size:1.05rem}}
