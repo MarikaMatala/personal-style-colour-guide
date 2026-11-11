@@ -87,17 +87,25 @@ function setupComparison(){
  const first=document.getElementById("compare-first");
  const second=document.getElementById("compare-second");
  if(!first||!second)return;
+ const isInitial=first.options.length===0;
+ const firstValue=first.value;
+ const secondValue=second.value;
  [first,second].forEach(select=>{
   select.replaceChildren();
+  const placeholder=document.createElement("option");
+  placeholder.value="";placeholder.textContent=comparisonCopy[currentLanguage].select;
+  select.append(placeholder);
   families.forEach((family,index)=>{
    const option=document.createElement("option");
    option.value=String(index);option.textContent=comparisonFamilyLabel(family);select.append(option);
   });
  });
- first.value="0";
- second.value=String(Math.min(15,families.length-1));
- first.addEventListener("change",renderComparison);
- second.addEventListener("change",renderComparison);
+ first.value=isInitial?"0":firstValue;
+ second.value=isInitial?String(Math.min(15,families.length-1)):secondValue;
+ if(isInitial){
+  first.addEventListener("change",renderComparison);
+  second.addEventListener("change",renderComparison);
+ }
  renderComparison();
 }
 function renderComparison(){
