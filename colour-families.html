@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Selaa laajaa väriperheiden ja vuodenaikojen väripalettien kokoelmaa.">
+  <meta name="theme-color" content="#2d2930">
+  <title>Colour Families — Personal Style & Colour Guide</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="colour-families.js" defer></script>
+</head>
+<body class="family-page">
+  <a class="skip-link" href="#main">Siirry sisältöön</a>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">🎨</span><span>Personal Style <i>&</i> Colour Guide</span></a>
+    <nav aria-label="Päänavigaatio"><a href="index.html" data-copy="home">Etusivu</a><a href="index.html#guide" data-copy="analysis">Värianalyysi</a><a href="#families" data-copy="browse">Väriperheet</a></nav>
+    <button class="language-toggle" id="family-language" type="button" aria-label="Switch language">EN</button>
+  </header>
+  <main id="main">
+    <section class="family-hero">
+      <p class="eyebrow" data-copy="eyebrow">Värien inspiraatiokirjasto</p>
+      <h1 data-copy="title">Tutustu <em>väriperheisiin.</em></h1>
+      <p class="section-lead" data-copy="intro">Selaa väriperheitä ilman värianalyysikyselyä. Tutki sävyjä, vertaile värimaailmoja ja kopioi haluamasi HEX-koodit.</p>
+      <a class="button button-primary" href="#families" data-copy="browseCta">Selaa värikarttoja ↓</a>
+    </section>
+    <section class="section" id="families">
+      <p class="eyebrow" data-copy="catalogue">Väriperhekatalogi</p>
+      <h2 data-copy="catalogueTitle">Löydä kiinnostava värimaailma.</h2>
+      <p class="section-lead" data-copy="filterIntro">Suodata väriperheitä vuodenajan, lämpötilan, vaaleuden ja värien voimakkuuden mukaan.</p>
+      <div class="family-controls">
+        <label><span data-copy="searchLabel">Hae väriperhettä tai sävyä</span><input id="family-search" type="search" placeholder="Esim. oliivi, burgundi, soft summer" data-placeholder="searchPlaceholder"></label>
+        <label><span data-copy="seasonLabel">Vuodenaika</span><select id="season-filter"><option value="all" data-copy="all">Kaikki</option><option value="spring">Spring / Kevät</option><option value="summer">Summer / Kesä</option><option value="autumn">Autumn / Syksy</option><option value="winter">Winter / Talvi</option><option value="other">Muut väriperheet</option></select></label>
+        <label><span data-copy="temperatureLabel">Lämpötila</span><select id="temperature-filter"><option value="all" data-copy="all">Kaikki</option><option value="warm">Warm / Lämmin</option><option value="cool">Cool / Viileä</option><option value="neutral">Neutral / Neutraali</option></select></label>
+        <label><span data-copy="qualityLabel">Värien ominaisuus</span><select id="quality-filter"><option value="all" data-copy="all">Kaikki</option><option value="light">Light / Vaalea</option><option value="deep">Deep / Tumma</option><option value="soft">Soft / Murrettu</option><option value="bright">Bright / Kirkas</option></select></label>
+      </div>
+      <p class="copy-status" id="copy-status" role="status" aria-live="polite"></p>
+      <div class="family-grid" id="family-grid"></div>
+      <p class="family-empty" id="no-results" hidden data-copy="noResults">Näillä suodattimilla ei löytynyt väriperheitä. Kokeile muuttaa hakua.</p>
+      <p class="family-disclaimer" data-copy="disclaimer">Väriperheiden nimet ja rajaukset vaihtelevat eri värianalyysijärjestelmissä. Paletit ovat inspiraatiota, eivät ehdottomia sääntöjä. Näytön asetukset ja valaistus vaikuttavat värien ulkonäköön.</p>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">🎨</span><span>Personal Style <i>&</i> Colour Guide</span></a>
+    <p data-copy="footer">Oppimisprojekti ja työnäyte · Suunnittelu ja kehitys etenevät vaiheittain.</p>
+    <div class="footer-links"><a href="index.html" data-copy="back">Takaisin värioppaaseen ↗</a><a href="https://github.com/MarikaMatala/personal-style-colour-guide" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
+  </footer>
+</body>
+</html>
